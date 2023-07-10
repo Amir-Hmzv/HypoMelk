@@ -85,3 +85,17 @@ export const LogoSvg = (
     />
   </svg>
 );
+export const searchButton = (
+<svg width={21} height={21} viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.9261 4.56689H16.941" stroke="white" strokeWidth="1.25373" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M11.9261 7.07422H14.4336" stroke="white" strokeWidth="1.25373" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M17.7769 9.99962C17.7769 14.3877 14.2246 17.9399 9.83655 17.9399C5.44849 17.9399 1.89626 14.3877 1.89626 9.99962C1.89626 5.61156 5.44849 2.05933 9.83655 2.05933" stroke="white" strokeWidth="1.25373" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M18.6127 18.7756L16.941 17.104" stroke="white" strokeWidth="1.25373" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+
+);
+
+export const searchBox = <svg xmlns="http://www.w3.org/2000/svg" width="47" height="46" viewBox="0 0 47 46" fill="none">
+<circle cx="23.8358" cy="23" r="22.9851" fill="#158A77"/>
+</svg>

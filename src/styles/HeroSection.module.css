@@ -1,0 +1,28 @@
+.h4{
+    /* color: #000;
+    text-align: right;
+    font-family: IRANYekanWeb;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165.409%;
+    letter-spacing: -0.805px; */
+@apply tracking-[-0.805px] font-IRANYekanWeb  text-[#000] xl:text-right text-center text-[23px] leading-[165.409%] font-bold
+}
+
+.h1{
+
+@apply tracking-[-1.425px] font-IRANYekanWeb  text-[#000] xl:text-right text-center text-[37px] md:text-[47px] lg:text-[57px] leading-[139.909%] font-extrabold my-[29px]
+
+}
+
+
+.titleDesc{
+@apply  font-IRANYekanWeb  text-[#000] opacity-70 xl:text-right text-center px-5 lg:px-0 text-[13px] leading-[165.409%] font-[400] my-[29px]
+
+}
+
+.shadowCustom {
+    box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 0.29);
+  
+  }

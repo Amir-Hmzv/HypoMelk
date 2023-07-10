@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`shadow-custom ${style.nav} `}>
+      <nav className={`shadow-custom ${style.nav} z-20`}>
         <ul className={`${style.ulNav}`}>
           <li className={style.liLg}>
             <Link className={style.hoverLink} to={"/#"}>
@@ -47,7 +47,10 @@ const Navbar = () => {
         <div className="w-full h-[90px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center ">
-              <a href="#"  className="text-white font-bold text-xl mt-[15%] cursor-pointer block">
+              <a
+                href="#"
+                className="text-white font-bold text-xl mt-[15%] cursor-pointer block"
+              >
                 {LogoSvg}
               </a>
             </div>
@@ -74,36 +77,36 @@ const Navbar = () => {
               <a href="#" className={style.mobileHoverLink}>
                 خانه
               </a>
-              <span className=" bg-main-green h-[1px] w-[70%]	 "></span>
+              <span className=" bg-main-green h-[1px] w-[50%]	 "></span>
               <span>
-                <HomeIcon className="h-6 w-6 text-main-green mr-2 relative top-2" />
+                <HomeIcon className="h-6 w-6 text-main-green ml-4 relative top-2" />
               </span>
             </div>
             <div className="flex justify-between items-baseline">
               <a href="#" className={style.mobileHoverLink}>
                 درباره ما
               </a>
-              <span className=" bg-main-green h-[1px] w-[70%]	 "></span>
+              <span className=" bg-main-green h-[1px] w-[50%]	 "></span>
               <span>
-                <UsersIcon className="h-6 w-6 text-main-green mr-2 relative top-2" />
+                <UsersIcon className="h-6 w-6 text-main-green ml-4 relative top-2" />
               </span>
             </div>
             <div className="flex justify-between items-baseline">
               <a href="#" className={style.mobileHoverLink}>
                 وبلاگ
               </a>
-              <span className=" bg-main-green h-[1px] w-[70%]	 "></span>
+              <span className=" bg-main-green h-[1px] w-[50%]	 "></span>
               <span>
-                <GlobeAltIcon className="h-6 w-6 text-main-green mr-2 relative top-2" />
+                <GlobeAltIcon className="h-6 w-6 text-main-green ml-4 relative top-2" />
               </span>
             </div>
             <div className="flex justify-between items-baseline">
               <a href="#" className={style.mobileHoverLink}>
                 تماس با ما
               </a>
-              <span className=" bg-main-green h-[1px] w-[70%]	 "></span>
+              <span className=" bg-main-green h-[1px] w-[50%]	 "></span>
               <span>
-                <PhoneIcon className="h-6 w-6 text-main-green mr-2 relative top-2" />
+                <PhoneIcon className="h-6 w-6 text-main-green ml-4  relative top-2" />
               </span>
             </div>
           </div>
