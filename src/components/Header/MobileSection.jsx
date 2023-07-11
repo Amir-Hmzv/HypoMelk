@@ -1,55 +1,23 @@
-import { Link } from "react-router-dom";
-import { LogoSvg } from "../assets/svg/svg";
-import { useState } from "react";
+import { LogoSvg } from "../../assets/svg/svg";
 import { Divide as Hamburger } from "hamburger-react";
-import style from "../styles/Navbar.module.css";
+import style from "../../styles/Navbar.module.css";
 import {
-  HomeIcon,
-  GlobeAltIcon,
-  PhoneIcon,
-  UsersIcon,
-} from "@heroicons/react/24/solid";
-
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+    HomeIcon,
+    GlobeAltIcon,
+    PhoneIcon,
+    UsersIcon,
+  } from "@heroicons/react/24/solid";
+const MobileSection = ({isOpen,setIsOpen}) => {
   return (
     <>
-      <nav className={`shadow-custom ${style.nav} z-20`}>
-        <ul className={`${style.ulNav}`}>
-          <li className={style.liLg}>
-            <Link className={style.hoverLink} to={"/#"}>
-              خانه
-            </Link>
-          </li>
-          <li className={style.liLg}>
-            <Link className={style.hoverLink} to={"#"}>
-              درباره ما
-            </Link>
-          </li>
-          <li className="lg:px-16">
-            <Link to={"#"}>{LogoSvg}</Link>
-          </li>
-          <li className={style.liLg}>
-            <Link className={style.hoverLink} to={"#"}>
-              وبلاگ
-            </Link>
-          </li>
-          <li className={style.liLg}>
-            <Link className={style.hoverLink} to={"#"}>
-              تماس با ما
-            </Link>
-          </li>
-        </ul>
-      </nav>
-
-      <nav className="bg-[#fff] md:hidden block  shadow-custom  sticky top-0">
+      {" "}
+      <nav className="bg-[#fff] md:hidden block  shadow-custom  sticky top-0 z-[100]">
         <div className="w-full h-[90px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center ">
               <a
                 href="#"
-                className="text-white font-bold text-xl mt-[15%] cursor-pointer block"
+                className="text-white font-bold text-xl right-4 top-2 cursor-pointer block fixed"
               >
                 {LogoSvg}
               </a>
@@ -116,4 +84,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MobileSection;

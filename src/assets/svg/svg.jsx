@@ -99,3 +99,9 @@ export const searchButton = (
 export const searchBox = <svg xmlns="http://www.w3.org/2000/svg" width="47" height="46" viewBox="0 0 47 46" fill="none">
 <circle cx="23.8358" cy="23" r="22.9851" fill="#158A77"/>
 </svg>
+
+export const MouseIcon =<svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 32 32" fill="none">
+  <path d="M16 29.3334C21.5067 29.3334 26 24.8401 26 19.3334V12.6667C26 7.16008 21.5067 2.66675 16 2.66675C10.4933 2.66675 6 7.16008 6 12.6667V19.3334C6 24.8401 10.4933 29.3334 16 29.3334Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M16 14.6667C14.8933 14.6667 14 13.7733 14 12.6667V10C14 8.89333 14.8933 8 16 8C17.0933 8 18 8.89333 18 10V12.6667C18 13.7733 17.0933 14.6667 16 14.6667Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M16 8.00008V2.66675" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+</svg>

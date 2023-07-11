@@ -1,6 +1,6 @@
-import Navbar from './Navbar';
+import Navbar from './Header/Navbar';
 import Footer from './Footer';
-import HeroSection from './HeroSection';
+import HeroSection from './Hero/HeroSection';
 
 
 
