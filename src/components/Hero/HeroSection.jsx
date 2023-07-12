@@ -19,11 +19,11 @@ const HeroSection = ({ heroImage }) => {
               <MainnTitles />
               <MainSearchInput />
               <MainBackground heroImage={heroImage} />
-              <form className="Specifications  space-y-9  lg:space-y-0  mt-[84px] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex absolute z-[30]  lg:justify-around xl:justify-between w-full min-[1220px]:w-[90%]  xl:w-[80%] 2xl:w-[80%] px-5 lg:px-0   ">
+              <form className="space-y-9  lg:space-y-0  mt-[84px] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex lg:absolute z-[30]  lg:justify-around xl:justify-between w-full min-[1220px]:w-[90%]  xl:w-[80%] 2xl:w-[80%] px-5 lg:px-0   ">
                 <SearchOption />
               </form>
               <div className="w-full mx-auto flex  relative lg:right-[50%] z-[15] ">
-                <div className="lg:mt-[173px]  sm:mt-[80%] md:mt-[85%] mt-[90%] invisible lg:visible mx-auto   bg-main-green  justify-center  p-2 cursor-pointer rounded-full flex ">
+                <div className="lg:mt-[173px]  sm:mt-[10%] md:mt-[85%] mt-[0%] invisible lg:visible mx-auto   bg-main-green  justify-center  p-2 cursor-pointer rounded-full flex ">
                   {MouseIcon}
                 </div>
               </div>

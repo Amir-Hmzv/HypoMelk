@@ -6,7 +6,7 @@ import { ChevronUpIcon } from "@heroicons/react/24/solid";
 const PropertyTypeOption = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [select, setSelect] = useState('')
-  const options = ["آپارتمان", "زمین ", "کلنگی",',ویلایی ','اداری'];
+  const options = ["آپارتمان", "زمین ", "کلنگی",'ویلایی ','اداری'];
   const dropdownRef = useRef(null);
 
  
