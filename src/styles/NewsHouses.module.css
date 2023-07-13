@@ -32,3 +32,23 @@ letter-spacing: -0.441px;
 @apply hover:text-main-green transition-all duration-300 ease-linear 
 
 }
+
+.meterPrice {
+    color: #101737;
+font-family: IRANYekanWeb;
+font-size: 23px;
+font-style: normal;
+font-weight: 800;
+line-height: 145.609%;
+letter-spacing: -0.483px;
+}
+.meterPrice2{
+    color: #818181;
+text-align: right;
+font-family: IRANYekanWeb;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 145.609%; /* 23.297px */
+letter-spacing: -0.336px;
+}

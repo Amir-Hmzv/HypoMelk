@@ -1,21 +1,17 @@
 .hoverLink {
-    @apply font-IRANYekanWeb text-main-text hover:text-main-green transition-[all] ease-in-out duration-100 transform  font-extrabold
+  @apply transform font-IRANYekanWeb font-extrabold text-main-text transition-all duration-100 ease-in-out  hover:text-main-green;
 }
-.liLg{
- @apply   lg:px-4 hover:pb-1 transition-all ease-out duration-200
-
+.liLg {
+  @apply transition-all duration-200 ease-out hover:pb-1 lg:px-4;
 }
 
 .mobileHoverLink {
-
-@apply font-IRANYekanWeb text-main-text block px-8  rounded-md text-base hover:mr-2 break-normal whitespace-nowrap   hover:text-main-green transition-[all] ease-in-out duration-500 transform  font-extrabold
-
-
+  @apply block transform whitespace-nowrap break-normal  rounded-md px-8 font-IRANYekanWeb text-base font-extrabold   text-main-text transition-all duration-500 ease-in-out hover:mr-2  hover:text-main-green;
 }
 .nav {
-    @apply w-full hidden md:block   lg:max-w-[1201px] h-[90px] bg-[#fff] lg:rounded-2xl mx-auto lg:mt-[30px]  sticky top-0
+  @apply sticky top-0 mx-auto   hidden h-[90px] w-full bg-[#fff] md:block lg:mt-[30px]  lg:max-w-[1201px] lg:rounded-2xl;
 }
 
-.ulNav{
-    @apply flex w-full h-full lg:justify-center justify-around items-center
+.ulNav {
+  @apply flex h-full w-full items-center justify-around lg:justify-center;
 }

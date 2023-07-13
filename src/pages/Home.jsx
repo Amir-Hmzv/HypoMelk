@@ -4,7 +4,6 @@ import service from "../services/base.service";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Card from "../components/NewsestHouses/Card";
-import WithSwiper from "../components/NewsestHouses/WithSwiper";
 const Home = () => {
   const [heroImage, setHeroImage] = useState(``);
   const [cases, setCases] = useState({});

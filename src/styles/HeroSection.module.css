@@ -1,5 +1,5 @@
-.h4{
-    /* color: #000;
+.h4 {
+  /* color: #000;
     text-align: right;
     font-family: IRANYekanWeb;
     font-size: 23px;
@@ -7,42 +7,35 @@
     font-weight: 700;
     line-height: 165.409%;
     letter-spacing: -0.805px; */
-@apply tracking-[-0.805px] font-IRANYekanWeb  text-[#000] xl:text-right text-center text-[23px] leading-[165.409%] font-bold
+  @apply text-center font-IRANYekanWeb  text-[23px] font-bold leading-[165.409%] tracking-[-0.805px] text-[#000] xl:text-right;
 }
 
-.h1{
-
-@apply tracking-[-1.425px] font-IRANYekanWeb  text-[#000] xl:text-right text-center text-[37px] md:text-[47px] lg:text-[57px] leading-[139.909%] font-extrabold mt-[10px] mb-[17px]
-
+.h1 {
+  @apply mb-[17px] mt-[10px]  text-center font-IRANYekanWeb text-[37px] font-extrabold leading-[139.909%] tracking-[-1.425px] text-[#000] md:text-[47px] lg:text-[57px] xl:text-right;
 }
 
-
-.titleDesc{
-@apply  font-IRANYekanWeb  text-[#000] opacity-70 xl:text-right text-center px-5 lg:px-0 text-[13px] leading-[165.409%] font-[400] my-[29px]
-
+.titleDesc {
+  @apply my-[29px]  px-5 text-center font-IRANYekanWeb text-[13px] font-[400] leading-[165.409%] text-[#000] opacity-70 lg:px-0 xl:text-right;
 }
 
 .shadowCustom {
-    box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 0.29);
-  
-  }
+  box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 0.29);
+}
 
-  .metreagBoxShadow {
-    box-shadow: 0 0px 52px -10px rgba(0, 0, 0, 0.29);
-  }
+.metreagBoxShadow {
+  box-shadow: 0 0px 52px -10px rgba(0, 0, 0, 0.29);
+}
 
-  .metrageYou {
-    color: #a5a5a5;
-text-align: right;
-font-family: IRANYekanWeb;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 165.409%;
-letter-spacing: -0.8px;
-
-      }
-  .metrageText{
-  
-@apply hover:text-main-green transition-all duration-300 ease-linear 
-  }
+.metrageYou {
+  color: #a5a5a5;
+  text-align: right;
+  font-family: IRANYekanWeb;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.409%;
+  letter-spacing: -0.8px;
+}
+.metrageText {
+  @apply transition-all duration-300 ease-linear hover:text-main-green;
+}

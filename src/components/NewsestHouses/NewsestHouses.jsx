@@ -8,10 +8,11 @@ import { useEffect, useRef, useState } from "react";
 import second from "../../assets/img/backGround.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Navigation, Autoplay } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 import Card from "./Card";
 const NewsestHouses = ({ cases }) => {
+
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -34,10 +35,10 @@ const NewsestHouses = ({ cases }) => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <div className="mt-[170px] max-w-[1201px] mx-auto relative">
-      <div className=" flex items-stretch sm:justify-between justify-center    ">
+    <div className="relative mx-auto mt-[170px] max-w-[1201px]">
+      <div className=" flex items-stretch justify-center sm:justify-between    ">
         <div>
-          <div className="sm:flex  bg-main-gray px-5 py-4 cursor-pointer  rounded-[10px] mt-6 lg:mx-5  hidden">
+          <div className="mt-6  hidden cursor-pointer rounded-[10px] bg-main-gray  px-5 py-4 sm:flex  lg:mx-5">
             <div className="text-white ">مشاهده همه</div>
             <div className="mr-2">{observe}</div>
           </div>
@@ -48,18 +49,18 @@ const NewsestHouses = ({ cases }) => {
           </h4>
           <h1 className={`${style.h1}`}>جدیدترین ملک ها</h1>
         </div>
-        <div className="sm:flex  items-center lg:mx-5 sm:mx-7 hidden">
+        <div className="hidden  items-center sm:mx-7 sm:flex lg:mx-5">
           <div
-            className={`p-3 ml-2 cursor-pointer bg-main-green rounded-[10px] text-white ${
-              isFirst  && "opacity-50"
+            className={`ml-2 cursor-pointer rounded-[10px] bg-main-green p-3 text-white ${
+              isFirst && "opacity-50"
             } `}
             onClick={handlePrev}
           >
             {<ArrowLongRightIcon className="h-6 w-6  " />}
           </div>
           <div
-            className={`p-3 cursor-pointer bg-main-green rounded-[10px] text-white disabled:opacity-60 ${
-              isLast  && "opacity-50"
+            className={`cursor-pointer rounded-[10px] bg-main-green p-3 text-white disabled:opacity-60 ${
+              isLast && "opacity-50"
             } `}
             onClick={handleNext}
           >
@@ -73,55 +74,53 @@ const NewsestHouses = ({ cases }) => {
             ref={SlideRef}
             dir="rtl"
             autoplay={{
-                delay: 6500,
-                disableOnInteraction: false,
-              }}
+              delay: 6500,
+              disableOnInteraction: false,
+            }}
             onSlideChange={onSlideChange}
-            spaceBetween={100}
-            modules={[Pagination, Navigation, A11y,Autoplay]}
-            className="text-center mx-10 relative"
+            spaceBetween={10}
+            modules={[Pagination, Navigation, A11y, Autoplay]}
+            className="relative mx-10 text-center"
             breakpoints={{
-                0: {
-                   slidesPerView: 1,
-                },
-           
-                502: {
-                   slidesPerView: 2,
-                },
-               
-                992: {
-                   slidesPerView: 3,
-                   
-                },
-             
-             }}
-          >
-            <SwiperSlide ><Card/></SwiperSlide>
-          
+              0: {
+                slidesPerView: 1,
+              },
 
+              602: {
+                slidesPerView: 2,
+              },
+
+              992: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            <SwiperSlide className="lg:m-10">
+              <Card />
+            </SwiperSlide>
           </Swiper>
           <div>
-          <div className="sm:hidden w-[50%]  bg-main-gray px-5 py-4 text-center mx-auto cursor-pointer justify-center rounded-[10px] mt-6 lg:mx-5  flex">
-            <div className="text-white ">مشاهده همه</div>
-            <div className="mr-2">{observe}</div>
+            <div className="mx-auto mt-6  flex w-[50%] cursor-pointer justify-center rounded-[10px] bg-main-gray px-5 py-4 text-center sm:hidden  lg:mx-5">
+              <div className="text-white ">مشاهده همه</div>
+              <div className="mr-2">{observe}</div>
+            </div>
+            <span
+              className={`absolute right-[5%] top-[30%] z-10 ml-2 inline-block cursor-pointer rounded-[10px] bg-main-green p-3 text-white sm:hidden ${
+                isFirst && "opacity-50"
+              } `}
+              onClick={handlePrev}
+            >
+              {<ArrowLongRightIcon className="h-6 w-6  " />}
+            </span>
+            <div
+              className={`absolute left-[5%]  top-[30%] z-10 inline-block cursor-pointer rounded-[10px] bg-main-green p-3 text-white disabled:opacity-60 sm:hidden ${
+                isLast && "opacity-50"
+              } `}
+              onClick={handleNext}
+            >
+              {<ArrowLongLeftIcon className="h-6 w-6  " />}
+            </div>
           </div>
-          <span
-            className={`p-3 absolute inline-block sm:hidden right-[5%] top-[30%] z-10 ml-2 cursor-pointer bg-main-green rounded-[10px] text-white ${
-              isFirst  && "opacity-50"
-            } `}
-            onClick={handlePrev}
-          >
-            {<ArrowLongRightIcon className="h-6 w-6  " />}
-          </span>
-          <div
-            className={`p-3 cursor-pointer  sm:hidden inline-block absolute left-[5%] top-[30%] z-10 bg-main-green rounded-[10px] text-white disabled:opacity-60 ${
-              isLast  && "opacity-50"
-            } `}
-            onClick={handleNext}
-          >
-            {<ArrowLongLeftIcon className="h-6 w-6  " />}
-          </div>
-        </div>
         </div>
       </div>
     </div>
@@ -129,5 +128,3 @@ const NewsestHouses = ({ cases }) => {
 };
 
 export default NewsestHouses;
-
-
