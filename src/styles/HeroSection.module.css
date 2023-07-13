@@ -43,12 +43,6 @@ letter-spacing: -0.8px;
 
       }
   .metrageText{
-    color: #000;
-text-align: right;
-font-family: IRANYekanWeb;
-font-size: 17px;
-font-style: normal;
-font-weight: 800;
-line-height: 165.409%;
-letter-spacing: -0.17px;
+  
+@apply hover:text-main-green transition-all duration-300 ease-linear 
   }

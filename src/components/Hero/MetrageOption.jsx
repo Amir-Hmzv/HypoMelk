@@ -42,7 +42,7 @@ const MetrageOption = () => {
 
 }
           </span>{" "}
-          <span>{select ? select : 'متراژ شما'}</span>
+          <span className="">{select ? select : 'متراژ شما'}</span>
         </div>
 
       </div>

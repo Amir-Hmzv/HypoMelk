@@ -23,7 +23,7 @@ const HeroSection = ({ heroImage }) => {
                 <SearchOption />
               </form>
               <div className="w-full mx-auto flex  relative lg:right-[50%] z-[15] ">
-                <div className="lg:mt-[173px]  sm:mt-[10%] md:mt-[85%] mt-[0%] invisible lg:visible mx-auto   bg-main-green  justify-center  p-2 cursor-pointer rounded-full flex ">
+                <div className="lg:mt-[173px]   mt-[0%] invisible lg:visible mx-auto   bg-main-green  justify-center  p-2 cursor-pointer rounded-full flex ">
                   {MouseIcon}
                 </div>
               </div>
