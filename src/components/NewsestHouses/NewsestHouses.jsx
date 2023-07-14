@@ -11,7 +11,9 @@ import { Pagination, A11y, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Card from "./Card";
+import { data } from "../../lib/data";
 const NewsestHouses = ({ cases }) => {
+
 
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
@@ -86,7 +88,7 @@ const NewsestHouses = ({ cases }) => {
                 slidesPerView: 1,
               },
 
-              602: {
+              802: {
                 slidesPerView: 2,
               },
 
@@ -95,9 +97,13 @@ const NewsestHouses = ({ cases }) => {
               },
             }}
           >
-            <SwiperSlide className="lg:m-10">
-              <Card />
+            {
+              data.map((item,key) => {
+            return    <SwiperSlide key={key} className="lg:my-10 lg:mx-5">
+              <Card item={item} />
             </SwiperSlide>
+              })
+            }
           </Swiper>
           <div>
             <div className="mx-auto mt-6  flex w-[50%] cursor-pointer justify-center rounded-[10px] bg-main-gray px-5 py-4 text-center sm:hidden  lg:mx-5">

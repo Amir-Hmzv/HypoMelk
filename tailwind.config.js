@@ -10,6 +10,8 @@ export default {
         "main-green": "#158A77",
         "main-gray": "#798595",
         "main-text": " #030303",
+        "special": "#FFA80A",
+        'precell' : '#55499B'
       },
     },
   },

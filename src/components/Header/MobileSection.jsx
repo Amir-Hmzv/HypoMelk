@@ -11,7 +11,7 @@ const MobileSection = ({ isOpen, setIsOpen }) => {
   return (
     <>
       {" "}
-      <nav className="shadow-custom sticky top-0  z-[100]  block bg-[#fff] md:hidden">
+      <nav className="shadow-custom sticky top-0   z-[100]  block bg-[#fff] md:hidden">
         <div className="mx-auto h-[90px] w-full px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center ">

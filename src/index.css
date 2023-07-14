@@ -36,3 +36,6 @@
   transition: max-height .8s ease-in-out;
 }
 
+.swiper-button-next{
+  @apply bg-cyan-400 text-red-50
+}
