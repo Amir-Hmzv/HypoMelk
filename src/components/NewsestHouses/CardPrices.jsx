@@ -1,5 +1,5 @@
 import { messageIcon } from "../../assets/svg/svg";
-import style from "../../styles/NewsHouses.module.css";
+import style from "../../styles/SliderAndCards.module.css";
 
 const CardPrices = ({item}) => {
   return (

@@ -1,20 +1,16 @@
-import {
-  ArrowLongLeftIcon,
-  ArrowLongRightIcon,
-} from "@heroicons/react/24/solid";
 import { observe } from "../../assets/svg/svg";
-import style from "../../styles/NewsHouses.module.css";
-import { useEffect, useRef, useState } from "react";
-import second from "../../assets/img/backGround.png";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Card from "./Card";
 import { data } from "../../lib/data";
+import ArrowIconRight from "./ArrowIconRight";
+import ArrowIconLeft from "./ArrowIconLeft";
+import HeadTitles from "./HeadTitles";
+import ObserveButton from "./ObserveButton";
 const NewsestHouses = ({ cases }) => {
-
-
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -39,56 +35,32 @@ const NewsestHouses = ({ cases }) => {
   return (
     <div className="relative mx-auto mt-[170px] max-w-[1201px]">
       <div className=" flex items-stretch justify-center sm:justify-between    ">
-        <div>
-          <div className="mt-6  hidden cursor-pointer rounded-[10px] bg-main-gray  px-5 py-4 sm:flex  lg:mx-5">
-            <div className="text-white ">مشاهده همه</div>
-            <div className="mr-2">{observe}</div>
-          </div>
-        </div>
-        <div className="">
-          <h4 className={`font-IRANYekanWeb text-main-green ${style.h4}`}>
-            خونه جدیدتو پیدا کن !
-          </h4>
-          <h1 className={`${style.h1}`}>جدیدترین ملک ها</h1>
-        </div>
+      <ObserveButton style={'hidden sm:flex lg:mx-5'}/>
+        <HeadTitles
+          title={` خونه جدیدتو پیدا کن !`}
+          smallTitle={`جدید ترین ملک ها`}
+        />
+
         <div className="hidden  items-center sm:mx-7 sm:flex lg:mx-5">
-          <div
-            className={`ml-2 cursor-pointer rounded-[10px] bg-main-green p-3 text-white ${
-              isFirst && "opacity-50"
-            } `}
-            onClick={handlePrev}
-          >
-            {<ArrowLongRightIcon className="h-6 w-6  " />}
-          </div>
-          <div
-            className={`cursor-pointer rounded-[10px] bg-main-green p-3 text-white disabled:opacity-60 ${
-              isLast && "opacity-50"
-            } `}
-            onClick={handleNext}
-          >
-            {<ArrowLongLeftIcon className="h-6 w-6  " />}
-          </div>
+          <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} />
+          <ArrowIconLeft isLast={isLast} handleNext={handleNext} />
         </div>
       </div>
-      <div className="mt-[76px] ">
+      <div className="mt-[26px] ">
         <div data-aos="fade-up" className="">
           <Swiper
             ref={SlideRef}
             dir="rtl"
-            autoplay={{
-              delay: 6500,
-              disableOnInteraction: false,
-            }}
             onSlideChange={onSlideChange}
             spaceBetween={10}
-            modules={[Pagination, Navigation, A11y, Autoplay]}
+            modules={[Pagination, Navigation, A11y]}
             className="relative mx-10 text-center"
             breakpoints={{
               0: {
                 slidesPerView: 1,
               },
 
-              802: {
+              800: {
                 slidesPerView: 2,
               },
 
@@ -97,35 +69,21 @@ const NewsestHouses = ({ cases }) => {
               },
             }}
           >
-            {
-              data.map((item,key) => {
-            return    <SwiperSlide key={key} className="lg:my-10 lg:mx-5">
-              <Card item={item} />
-            </SwiperSlide>
-              })
-            }
+            {data.map((item, key) => {
+              return (
+                <SwiperSlide key={key} className="lg:my-10 lg:px-1">
+                  <Card item={item} />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
-          <div>
-            <div className="mx-auto mt-6  flex w-[50%] cursor-pointer justify-center rounded-[10px] bg-main-gray px-5 py-4 text-center sm:hidden  lg:mx-5">
-              <div className="text-white ">مشاهده همه</div>
-              <div className="mr-2">{observe}</div>
+          <div className="my-5 space-y-8">
+            <div className="flex justify-center sm:hidden">
+              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} />
+              <ArrowIconLeft isLast={isLast} handleNext={handleNext} />
             </div>
-            <span
-              className={`absolute right-[5%] top-[30%] z-10 ml-2 inline-block cursor-pointer rounded-[10px] bg-main-green p-3 text-white sm:hidden ${
-                isFirst && "opacity-50"
-              } `}
-              onClick={handlePrev}
-            >
-              {<ArrowLongRightIcon className="h-6 w-6  " />}
-            </span>
-            <div
-              className={`absolute left-[5%]  top-[30%] z-10 inline-block cursor-pointer rounded-[10px] bg-main-green p-3 text-white disabled:opacity-60 sm:hidden ${
-                isLast && "opacity-50"
-              } `}
-              onClick={handleNext}
-            >
-              {<ArrowLongLeftIcon className="h-6 w-6  " />}
-            </div>
+          
+            <ObserveButton style={'flex w-[50%] mx-auto justify-center sm:hidden '}/>
           </div>
         </div>
       </div>

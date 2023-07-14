@@ -1,5 +1,5 @@
 import { callIcon, teltegramIcon } from "../../assets/svg/svg";
-import style from "../../styles/NewsHouses.module.css";
+import style from "../../styles/SliderAndCards.module.css";
 
 const ProflieCard = ({item}) => {
   return (

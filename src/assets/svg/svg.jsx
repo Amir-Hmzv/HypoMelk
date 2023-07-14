@@ -141,14 +141,14 @@ export const specialIcon = <svg xmlns="http://www.w3.org/2000/svg" width="22" he
 </svg>
 
 
-export const ApartmentIcon =  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10.8333 18.3334H4.16667C2.50001 18.3334 1.66667 17.5001 1.66667 15.8334V9.16675C1.66667 7.50008 2.50001 6.66675 4.16667 6.66675H8.33334V15.8334C8.33334 17.5001 9.16667 18.3334 10.8333 18.3334Z" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M8.42499 3.33325C8.35833 3.58325 8.33334 3.85825 8.33334 4.16659V6.66658H4.16667V4.99992C4.16667 4.08325 4.91667 3.33325 5.83334 3.33325H8.42499Z" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M11.6667 6.66675V10.8334" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M15 6.66675V10.8334" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M14.1667 14.1667H12.5C12.0417 14.1667 11.6667 14.5417 11.6667 15.0001V18.3334H15V15.0001C15 14.5417 14.625 14.1667 14.1667 14.1667Z" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M5 10.8333V14.1666" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M8.33333 15.8334V4.16675C8.33333 2.50008 9.16666 1.66675 10.8333 1.66675H15.8333C17.5 1.66675 18.3333 2.50008 18.3333 4.16675V15.8334C18.3333 17.5001 17.5 18.3334 15.8333 18.3334H10.8333C9.16666 18.3334 8.33333 17.5001 8.33333 15.8334Z" stroke="#535353" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+export const ApartmentIcon =  <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 20 20" fill="none">
+  <path d="M10.8333 18.3334H4.16667C2.50001 18.3334 1.66667 17.5001 1.66667 15.8334V9.16675C1.66667 7.50008 2.50001 6.66675 4.16667 6.66675H8.33334V15.8334C8.33334 17.5001 9.16667 18.3334 10.8333 18.3334Z" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M8.42499 3.33325C8.35833 3.58325 8.33334 3.85825 8.33334 4.16659V6.66658H4.16667V4.99992C4.16667 4.08325 4.91667 3.33325 5.83334 3.33325H8.42499Z" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M11.6667 6.66675V10.8334" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M15 6.66675V10.8334" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M14.1667 14.1667H12.5C12.0417 14.1667 11.6667 14.5417 11.6667 15.0001V18.3334H15V15.0001C15 14.5417 14.625 14.1667 14.1667 14.1667Z" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M5 10.8333V14.1666" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M8.33333 15.8334V4.16675C8.33333 2.50008 9.16666 1.66675 10.8333 1.66675H15.8333C17.5 1.66675 18.3333 2.50008 18.3333 4.16675V15.8334C18.3333 17.5001 17.5 18.3334 15.8333 18.3334H10.8333C9.16666 18.3334 8.33333 17.5001 8.33333 15.8334Z" stroke="#535353" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
 </svg>
 
 
