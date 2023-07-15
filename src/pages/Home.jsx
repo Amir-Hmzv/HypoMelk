@@ -3,6 +3,7 @@ import { HeroSection, NewsHouses ,TrustSection,GroupingSection } from "../compon
 import service from "../services/base.service";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Hero from "../components/Hero/Hero";
 const Home = () => {
   const [heroImage, setHeroImage] = useState(``);
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
   return (
     <>
       <HeroSection heroImage={heroImage} />
+      {/* <Hero/> */}
       <NewsHouses />
       <TrustSection/>
       <GroupingSection/>

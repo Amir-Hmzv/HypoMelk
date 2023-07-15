@@ -3,7 +3,7 @@ import style from "../../styles/HeroSection.module.css";
 const MainnTitles = () => {
   return (
     <>
-      <div>
+      <div className="mt-[111px] z-30 relative">
         <h4 className={style.h4}>برترین مشاورین املاک خاورمیانه</h4>
         <h1 className={style.h1}>مشاورین املاک هوم لند</h1>
         <p className={style.titleDesc}>
