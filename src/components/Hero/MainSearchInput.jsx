@@ -4,16 +4,16 @@ import { searchBox, searchButton } from "../../assets/svg/svg";
 const MainSearchInput = () => {
   return (
     <>
-      <div className=" xl:block flex justify-center mt-[39px] px-5 lg:px-0 relative mb-7 ">
-        <div className="relative flex w-[475px] h-[56px]  rounded-[28px] z-20">
+      <div className=" relative mb-7 mt-[39px] flex justify-center px-5 lg:px-0 xl:block ">
+        <div className="relative z-20 flex h-[56px]  w-[475px] rounded-[28px]">
           <input
             type="text"
             placeholder="جستجوی کد ملکی"
-            className={`${style.shadowCustom}  rounded-[28px] pr-3 outline-none flex justify-center w-full h-full`}
+            className={`${style.shadowCustom}  flex h-full w-full justify-center rounded-[28px] pr-3 outline-none`}
           />
           <div className="absolute left-[2%] top-[9%]">
             <div className="">{searchBox}</div>
-            <button className="bg-main-green absolute bottom-[30%] right-[27%] ">
+            <button className="absolute bottom-[30%] right-[27%] bg-main-green ">
               {searchButton}
             </button>
           </div>
