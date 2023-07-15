@@ -152,7 +152,96 @@ export const ApartmentIcon =  <svg xmlns="http://www.w3.org/2000/svg" width={20}
 </svg>
 
 
+
+
 export const cameraIcon = <svg xmlns="http://www.w3.org/2000/svg" width={19} height={19} viewBox="0 0 19 19" fill="none">
   <path d="M4.82368 17.4166H14.1764C16.6395 17.4166 17.6212 16.0787 17.7372 14.4478L18.2012 7.90867C18.3262 6.19867 16.7912 4.74992 14.8546 4.74992C14.3102 4.74992 13.8105 4.47284 13.5606 4.04534L12.918 2.89742C12.5075 2.177 11.4366 1.58325 10.5263 1.58325H8.48265C7.56344 1.58325 6.49252 2.177 6.08201 2.89742L5.43945 4.04534C5.18957 4.47284 4.68981 4.74992 4.14543 4.74992C2.20885 4.74992 0.673868 6.19867 0.798809 7.90867L1.26287 14.4478C1.36997 16.0787 2.36056 17.4166 4.82368 17.4166Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   <path d="M9.49998 14.2501C11.2441 14.2501 12.6666 12.8275 12.6666 11.0834C12.6666 9.33931 11.2441 7.91675 9.49998 7.91675C7.75588 7.91675 6.33331 9.33931 6.33331 11.0834C6.33331 12.8275 7.75588 14.2501 9.49998 14.2501Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+
+// trust
+
+export const  trustBuildingIcon = <svg xmlns="http://www.w3.org/2000/svg" width={53} height={53} viewBox="0 0 53 53" fill="none">
+  <path d="M2.20834 48.5833H50.7917" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M43.6809 48.6056V38.7563" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M43.725 24.0488C41.0308 24.0488 38.8666 26.213 38.8666 28.9072V33.92C38.8666 36.6142 41.0308 38.7784 43.725 38.7784C46.4191 38.7784 48.5833 36.6142 48.5833 33.92V28.9072C48.5833 26.213 46.4191 24.0488 43.725 24.0488Z" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M4.63745 48.5834V13.3164C4.63745 8.87768 6.8459 6.64722 11.2405 6.64722H24.9984C29.3929 6.64722 31.5791 8.87768 31.5791 13.3164V48.5834" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M12.8083 18.2188H23.7396" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M12.8083 26.5H23.7396" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M18.2188 48.5833V40.302" stroke="#158A77" strokeWidth="3.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+
+export const trustRateIcon = <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+<path d="M41.9584 19.8751C41.9584 23.0772 41.0088 26.0143 39.3746 28.4655C36.9896 31.9989 33.2134 34.4943 28.8188 35.1347C28.0679 35.2672 27.295 35.3334 26.5 35.3334C25.705 35.3334 24.9321 35.2672 24.1813 35.1347C19.7867 34.4943 16.0104 31.9989 13.6254 28.4655C11.9913 26.0143 11.0417 23.0772 11.0417 19.8751C11.0417 11.3288 17.9538 4.41675 26.5 4.41675C35.0463 4.41675 41.9584 11.3288 41.9584 19.8751Z" stroke="#158A77" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.9271 40.788L43.2834 41.6492C42.4663 41.8479 41.8259 42.4663 41.6492 43.2834L40.8763 46.5297C40.4567 48.2963 38.2042 48.8263 37.0338 47.4351L26.5 35.3334L15.9663 47.4571C14.7958 48.8484 12.5433 48.3184 12.1238 46.5517L11.3508 43.3054C11.1521 42.4884 10.5117 41.848 9.71668 41.6713L6.07293 40.8101C4.39459 40.4126 3.79834 38.3146 5.01293 37.1L13.6254 28.4875C16.0104 32.0209 19.7867 34.5163 24.1813 35.1568C24.9321 35.2893 25.705 35.3555 26.5 35.3555C27.295 35.3555 28.0679 35.2893 28.8188 35.1568C33.2134 34.5163 36.9896 32.0209 39.3746 28.4875L47.9871 37.1C49.2017 38.2925 48.6054 40.3905 46.9271 40.788Z" stroke="#158A77" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.7809 13.2058L29.0838 15.8116C29.2604 16.1649 29.7242 16.5182 30.1438 16.5845L32.5067 16.982C34.0084 17.2249 34.3617 18.3291 33.2796 19.4112L31.4467 21.244C31.1375 21.5532 30.9609 22.1495 31.0713 22.5912L31.6013 24.8657C32.0209 26.6545 31.0713 27.3611 29.4813 26.4115L27.2729 25.1086C26.8754 24.8657 26.2129 24.8657 25.8154 25.1086L23.6071 26.4115C22.0171 27.339 21.0675 26.6545 21.4871 24.8657L22.0171 22.5912C22.1054 22.1716 21.9509 21.5532 21.6417 21.244L19.8088 19.4112C18.7267 18.3291 19.08 17.247 20.5817 16.982L22.9446 16.5845C23.3421 16.5182 23.8059 16.1649 23.9825 15.8116L25.2854 13.2058C25.9259 11.7924 27.0742 11.7924 27.7809 13.2058Z" stroke="#158A77" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+export const fluctuation =<svg xmlns="http://www.w3.org/2000/svg" width={53} height={53} viewBox="0 0 53 53" fill="none">
+  <path d="M19.9192 6.27162L8.01624 15.5466C6.02874 17.0925 4.41666 20.3829 4.41666 22.8783V39.242C4.41666 44.3654 8.59041 48.5612 13.7137 48.5612H39.2862C44.4096 48.5612 48.5833 44.3654 48.5833 39.2641V23.1875C48.5833 20.5154 46.7946 17.0925 44.6083 15.5687L30.9608 6.00662C27.8692 3.84245 22.9004 3.95287 19.9192 6.27162Z" stroke="#158A77" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M36.4375 25.3958L27.1625 34.6708L23.6292 29.3708L16.5625 36.4374" stroke="#158A77" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M32.0208 25.3958H36.4375V29.8124" stroke="#158A77" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+
+//grouping
+
+export const villaHouseIcon = <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+<path d="M1.125 24.75H25.875" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.2525 24.7613V19.7438" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.275 12.2512C20.9025 12.2512 19.8 13.3537 19.8 14.7262V17.2799C19.8 18.6524 20.9025 19.755 22.275 19.755C23.6475 19.755 24.75 18.6524 24.75 17.2799V14.7262C24.75 13.3537 23.6475 12.2512 22.275 12.2512Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.36247 24.75V6.78375C2.36247 4.5225 3.48753 3.38623 5.72628 3.38623H12.735C14.9738 3.38623 16.0875 4.5225 16.0875 6.78375V24.75" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.52498 9.28125H12.0937" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.52498 13.5H12.0937" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.28125 24.75V20.5312" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+export const gardenIcon = <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+<path d="M2.25 24.75H24.75" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.31876 24.75L3.37501 11.2163C3.37501 10.53 3.70126 9.87758 4.24126 9.45008L12.1163 3.31881C12.9263 2.68881 14.0625 2.68881 14.8838 3.31881L22.7588 9.43882C23.31 9.86632 23.625 10.5188 23.625 11.2163V24.75" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.4375 12.375H9.5625C8.62875 12.375 7.875 13.1288 7.875 14.0625V24.75H19.125V14.0625C19.125 13.1288 18.3712 12.375 17.4375 12.375Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.25 18.2812V19.9688" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.8125 8.4375H15.1875" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+export const groundIcon = <svg xmlns="http://www.w3.org/2000/svg" width={26} height={26} viewBox="0 0 26 26" fill="none">
+  <path d="M2.16669 9.74996V7.04163C2.16669 4.34413 4.34419 2.16663 7.04169 2.16663H9.75002" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M16.25 2.16663H18.9583C21.6558 2.16663 23.8333 4.34413 23.8333 7.04163V9.74996" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M23.8333 17.3334V18.9584C23.8333 21.6559 21.6558 23.8334 18.9583 23.8334H17.3333" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M9.75002 23.8333H7.04169C4.34419 23.8333 2.16669 21.6558 2.16669 18.9583V16.25" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+export const  shopIcon= <svg xmlns="http://www.w3.org/2000/svg" width={27} height={27} viewBox="0 0 27 27" fill="none">
+  <path d="M14.0625 24.7501H4.58997C3.28497 24.7501 2.21622 23.7039 2.21622 22.4214V5.7264C2.21622 2.7789 4.40997 1.44015 7.09872 2.7564L12.0937 5.2089C13.1737 5.73765 14.0625 7.1439 14.0625 8.3364V24.7501Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M24.7162 16.9427V21.1952C24.7162 23.6252 23.5912 24.7502 21.1612 24.7502H14.0625V11.7227L14.5912 11.8352L19.6537 12.9714L21.9375 13.4777C23.4225 13.8039 24.6375 14.5689 24.705 16.7289C24.7162 16.7964 24.7162 16.8639 24.7162 16.9427Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M6.18747 10.1251H10.0912" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M6.18747 14.6251H10.0912" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M19.6537 12.9713V16.5938C19.6537 17.9888 18.5175 19.1251 17.1225 19.1251C15.7275 19.1251 14.5912 17.9888 14.5912 16.5938V11.8351L19.6537 12.9713Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M24.705 16.7288C24.6375 18.0563 23.535 19.1251 22.185 19.1251C20.79 19.1251 19.6537 17.9888 19.6537 16.5938V12.9713L21.9375 13.4776C23.4225 13.8038 24.6375 14.5688 24.705 16.7288Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+
+
+export const  gardenVillaIcon  = <svg xmlns="http://www.w3.org/2000/svg" width={27} height={27} viewBox="0 0 27 27" fill="none">
+  <path d="M2.25 24.75H24.75" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M16.8863 24.7387L3.38626 24.7612L3.375 7.95372C3.375 7.19997 3.75752 6.50243 4.37627 6.08618L8.87627 3.08245C9.63002 2.5762 10.62 2.5762 11.3737 3.08245L15.8737 6.08618C16.5037 6.50243 16.875 7.19997 16.875 7.95372L16.8863 24.7387Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M22.4775 24.7613V20.25" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M22.5 13.5C21.2625 13.5 20.25 14.5125 20.25 15.75V18C20.25 19.2375 21.2625 20.25 22.5 20.25C23.7375 20.25 24.75 19.2375 24.75 18V15.75C24.75 14.5125 23.7375 13.5 22.5 13.5Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M3.375 15.75H16.875" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M10.125 24.75V20.5312" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M10.125 11.8125C11.057 11.8125 11.8125 11.057 11.8125 10.125C11.8125 9.19302 11.057 8.4375 10.125 8.4375C9.19302 8.4375 8.4375 9.19302 8.4375 10.125C8.4375 11.057 9.19302 11.8125 10.125 11.8125Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
+
+export const  groupApartment = <svg xmlns="http://www.w3.org/2000/svg" width={27} height={27} viewBox="0 0 27 27" fill="none">
+  <path d="M14.625 24.75H5.625C3.375 24.75 2.25 23.625 2.25 21.375V12.375C2.25 10.125 3.375 9 5.625 9H11.25V21.375C11.25 23.625 12.375 24.75 14.625 24.75Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M11.3737 4.5C11.2837 4.8375 11.25 5.20875 11.25 5.625V9H5.625V6.75C5.625 5.5125 6.6375 4.5 7.875 4.5H11.3737Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M15.75 9V14.625" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M20.25 9V14.625" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M19.125 19.125H16.875C16.2562 19.125 15.75 19.6313 15.75 20.25V24.75H20.25V20.25C20.25 19.6313 19.7437 19.125 19.125 19.125Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M6.75 14.625V19.125" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M11.25 21.375V5.625C11.25 3.375 12.375 2.25 14.625 2.25H21.375C23.625 2.25 24.75 3.375 24.75 5.625V21.375C24.75 23.625 23.625 24.75 21.375 24.75H14.625C12.375 24.75 11.25 23.625 11.25 21.375Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
 </svg>

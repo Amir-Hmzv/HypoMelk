@@ -4,13 +4,13 @@ import { Footer, Navbar } from "./components";
 
 const Root = () => {
   return (
-    <>
+    <div className="">
       <Navbar />
       <div>
         <Outlet />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

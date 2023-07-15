@@ -1,13 +1,8 @@
-import Navbar from './Header/Navbar';
-import Footer from './Footer';
-import HeroSection from './Hero/HeroSection';
-import NewsestHousesMain from './NewsestHouses/NewsestHouses';
+import Navbar from "./Header/Navbar";
+import Footer from "./Footer";
+import HeroSection from "./Hero/HeroSection";
+import NewsHouses from './NewsHouses/NewsHouses';
+import TrustSection from './Trust/TrustSection';
+import GroupingSection from './Grouping/GroupingSection';
 
-
-
-export {
-    Navbar,
-    Footer,
-    HeroSection,
-    NewsestHousesMain
-}
+export { Navbar, Footer, HeroSection ,NewsHouses,TrustSection,GroupingSection};

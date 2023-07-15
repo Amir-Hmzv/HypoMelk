@@ -30,9 +30,9 @@ const PriceRange = () => {
   }, [dropdownRef]);
 
   return (
-    <div className="relative " ref={dropdownRef}>
+    <div className="relative z-20" ref={dropdownRef}>
       <div
-        className={`relative h-[58px] w-[259px] cursor-pointer   rounded-[9px] bg-white xl:w-[343px]    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
+        className={` h-[58px] w-[259px]   mx-4  cursor-pointer   rounded-[9px] bg-white xl:w-[343px]    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className={`${style.metrageText}`}> بازه قیمتی :</div>

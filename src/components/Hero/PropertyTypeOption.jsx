@@ -26,7 +26,7 @@ const PropertyTypeOption = () => {
   return (
     <div className="relative z-[40]   " ref={dropdownRef}>
       <div
-        className={`relative h-[58px] w-[259px] cursor-pointer   rounded-[9px] bg-white xl:w-[286px]    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
+        className={`relative h-[58px] w-[259px] cursor-pointer xl:mx-4   rounded-[9px] bg-white xl:w-[286px]    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className={`${style.metrageText}`}> نوع ملک :</div>
