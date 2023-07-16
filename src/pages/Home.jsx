@@ -4,13 +4,16 @@ import {
   NewsHouses,
   TrustSection,
   GroupingSection,
-  jungleCards
+  
 } from "../components";
 import service from "../services/base.service";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Hero from "../components/Hero/Hero";
+// import Hero from "../components/Hero/Hero";
 import BitchCards from "../components/BitchCards/BitchCards";
+// import jungleCards from '../components/jungleCards/jungleCards'
+import WoodSection from "../components/Wood/WoodSection";
+import Hero from "../components/Hero/Hero";
 const Home = () => {
   const [heroImage, setHeroImage] = useState(``);
   useEffect(() => {
@@ -25,16 +28,13 @@ const Home = () => {
 
   return (
     <>
-      <HeroSection heroImage={heroImage} />
-      {/* <Hero/> */}
+      {/* <HeroSection heroImage={heroImage} /> */}
+      <Hero/>
       <NewsHouses />
       <TrustSection />
       <GroupingSection />
       <BitchCards />
-      <BitchCards />
-
-      {/* <jungleCards/> */}
-
+      <WoodSection/>
       <br />
       <br />
       <br />

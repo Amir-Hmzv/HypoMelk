@@ -30,7 +30,7 @@ const ImageCardContent = ({ item, ...rest }) => {
       </div>
       <div className="absolute right-3 top-3 flex items-center  ">
         <div
-          className={`flex flex-row-reverse rounded-lg bg-special p-2 font-IRANYekanWeb ${
+          className={`flex flex-row-reverse rounded-lg bg-special p-1 lg:p-2 font-IRANYekanWeb ${
             !item?.special && "hidden"
           } `}
         >
@@ -38,7 +38,7 @@ const ImageCardContent = ({ item, ...rest }) => {
           <span> {specialIcon}</span>
         </div>
         <div
-          className={`mr-2 ${style.presell} ${!item.Presell && 'hidden'} rounded-lg bg-precell px-4 py-2`}
+          className={`mr-2 ${style.presell} ${!item.Presell && 'hidden'} rounded-lg bg-precell  p-1 lg:p-2`}
         >
           پیش فروش
         </div>

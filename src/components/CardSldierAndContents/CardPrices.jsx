@@ -11,7 +11,7 @@ const CardPrices = ({item,ownstyle}) => {
       <span className="font-IRANYekanWeb">{item?.price}</span>{" "}
       <span className="mr-2 text-[16px] text-gray-600 font-IRANYekanWeb">تومان</span>
     </div>
-    <div className={`${style.meterPrice2} ${ownstyle ? ownstyle : 'flex' } `}>
+    <div className={`${style.meterPrice2} ${ownstyle ? ownstyle : 'md:flex hidden' } `}>
       ({item?.priceByEachMeter})
     </div>
   </div>  )

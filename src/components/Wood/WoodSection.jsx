@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Beachdata } from "../../lib/data";
 import {ArrowIconLeft,ArrowIconRight,Card,HeadTitles,ObserveButton} from '../CardSldierAndContents'
-const jungleCards = () => {
+const WoodSection = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -85,8 +85,4 @@ const jungleCards = () => {
     </div>
   );
 };
-
-export default jungleCards;
-
-
-
+export default WoodSection
