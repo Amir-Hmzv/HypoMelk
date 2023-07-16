@@ -42,7 +42,7 @@ const ImageCard = ({ item }) => {
       >
         {item.media.map((image, i) => {
           return (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={i} className="">
               <ImageCardContent
                 item={item}
                 image={image}

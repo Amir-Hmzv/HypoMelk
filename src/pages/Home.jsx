@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
-import { HeroSection, NewsHouses ,TrustSection,GroupingSection } from "../components";
+import {
+  HeroSection,
+  NewsHouses,
+  TrustSection,
+  GroupingSection,
+  jungleCards
+} from "../components";
 import service from "../services/base.service";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "../components/Hero/Hero";
+import BitchCards from "../components/BitchCards/BitchCards";
 const Home = () => {
   const [heroImage, setHeroImage] = useState(``);
   useEffect(() => {
@@ -21,8 +28,13 @@ const Home = () => {
       <HeroSection heroImage={heroImage} />
       {/* <Hero/> */}
       <NewsHouses />
-      <TrustSection/>
-      <GroupingSection/>
+      <TrustSection />
+      <GroupingSection />
+      <BitchCards />
+      <BitchCards />
+
+      {/* <jungleCards/> */}
+
       <br />
       <br />
       <br />
@@ -33,7 +45,6 @@ const Home = () => {
       <br />
       <br />
       <br />
- 
     </>
   );
 };

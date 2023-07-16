@@ -16,7 +16,7 @@ letter-spacing: -1.295px;
 }
 .cardShadow{
     box-shadow: 0px 0px 34px -9px rgba(12, 46, 96, 0.25);
-    @apply lg:hover:-translate-y-[10px] transform  transition-all duration-500
+    /* @apply lg:hover:-translate-y-[10px] transform   origin-top	overflow-hidden transition-all duration-700  */
 }
 
 .cardTitle {
@@ -68,23 +68,25 @@ letter-spacing: -0.525px;
 .userExperience{
     color: #B1B1B1;
 text-align: right;
-font-family: IRANYekanWeb;
 font-size: 11px;
 font-style: normal;
 font-weight: 400;
 line-height: 145.609%; /* 16.017px */
 letter-spacing: -0.231px;
+
+@apply font-IRANYekanWeb
 }
 
 .specialText{
     color: #FFF;
 text-align: right;
-font-family: IRANYekanWeb;
 font-size: 14px;
 font-style: normal;
 font-weight: 800;
 line-height: 165.409%; /* 19.849px */
 letter-spacing: -0.42px;
+@apply font-IRANYekanWeb
+
 }
 .presell{
     color: #FFF;
@@ -95,6 +97,8 @@ font-style: normal;
 font-weight: 800;
 line-height: 165.409%; /* 19.849px */
 letter-spacing: -0.42px;
+@apply font-IRANYekanWeb
+
 }
 
 .timeText{

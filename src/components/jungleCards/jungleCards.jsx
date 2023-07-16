@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { data } from "../../lib/data";
+import { Beachdata } from "../../lib/data";
 import {ArrowIconLeft,ArrowIconRight,Card,HeadTitles,ObserveButton} from '../CardSldierAndContents'
-const NewsHouses = () => {
+const jungleCards = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -28,12 +28,12 @@ const NewsHouses = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <div className="relative mx-auto mt-[170px] max-w-[1201px] ">
+    <div className="relative mx-auto mt-[170px] max-w-[1201px]">
       <div className=" flex items-stretch justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
       <ObserveButton style={'hidden sm:flex lg:mx-5'}/>
         <HeadTitles
-          title={` خونه جدیدتو پیدا کن !`}
-          smallTitle={`جدید ترین ملک ها`}
+          smallTitle={`   ویلای ساحلی مورد علاقتو پیدا کن !`}
+          title={`جدیدترین ویلا های ساحلی`}
         />
 
         <div className="hidden  items-center sm:mx-7 sm:flex lg:mx-5">
@@ -49,7 +49,7 @@ const NewsHouses = () => {
             onSlideChange={onSlideChange}
             spaceBetween={30}
             modules={[Pagination, Navigation, A11y]}
-            className="relative mx-20 text-center "
+            className=" mx-10 text-center"
             breakpoints={{
               0: {
                 slidesPerView: 1,
@@ -64,10 +64,10 @@ const NewsHouses = () => {
               },
             }}
           >
-            {data.map((item, key) => {
+            {Beachdata.map((item, key) => {
               return (
-                <SwiperSlide key={key} className="lg:my-10 lg:px-1 px-5">
-                  <Card item={item}  cardPadddng={'p-2'} />
+                <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden absolute hover:-translate-y-10 inset-0 transform py-10  px-5   ">
+                  <Card ownstyle={'hidden'} item={item} cardPadddng={'pb-3  '} />
                 </SwiperSlide>
               );
             })}
@@ -86,4 +86,7 @@ const NewsHouses = () => {
   );
 };
 
-export default NewsHouses;
+export default jungleCards;
+
+
+

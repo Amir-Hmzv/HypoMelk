@@ -9,7 +9,7 @@ const ImageCardContent = ({ item, ...rest }) => {
   const { handleNext, handlePrev, isLast, isFirst, image } = rest;
   console.log(handleNext);
   return (
-    <div className="relative">
+    <div className="relative inset-0 ">
       <div
         onClick={handleNext}
         className={`prev absolute left-3 top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isLast && 'opacity-50'}`}
@@ -22,9 +22,9 @@ const ImageCardContent = ({ item, ...rest }) => {
       >
         <ChevronRightIcon className="h-4 w-4" />
       </div>
-      <img className=" h-[200px] w-full rounded-[10px]" src={image} alt="" />
+      <img className="  h-[200px] w-full rounded-t-[16px] inline" src={image} alt="" />
       <div
-        className={`absolute bottom-2 left-[10%] rounded-md bg-white p-2 sm:left-3 ${style.timeText}`}
+        className={`absolute bottom-2 left-[10%] rounded-md font-IRANYekanWeb bg-white p-2 sm:left-3 ${style.timeText}`}
       >
         {item?.time}
       </div>
@@ -34,7 +34,7 @@ const ImageCardContent = ({ item, ...rest }) => {
             !item?.special && "hidden"
           } `}
         >
-          <span className={`mx-1 ${style.specialText}`}>فروش ویژه</span>
+          <span className={`mx-1 ${style.specialText} `}>فروش ویژه</span>
           <span> {specialIcon}</span>
         </div>
         <div

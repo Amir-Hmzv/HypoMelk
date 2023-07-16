@@ -3,7 +3,7 @@ import style from "../../styles/SliderAndCards.module.css";
 
 const ProflieCard = ({item}) => {
   return (
-    <div className="mt-[17px] flex items-baseline justify-between">
+    <div className="mt-[17px] flex items-baseline justify-between mx-2">
     <div className="ml-2 flex w-full justify-between">
       <div className="flex">
         <div>

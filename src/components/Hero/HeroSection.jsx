@@ -13,13 +13,13 @@ const HeroSection = ({ heroImage }) => {
         <div className="w-full lg:max-w-[1201px]  mx-auto ">
           <div
             className="grid grid-cols-1
-         lg:grid-cols-2"
+            lg:grid-cols-2 "
           >
             <div className="mt-[10%] ">
               <MainnTitles />
               <MainSearchInput />
               <MainBackground heroImage={heroImage} />
-              <form className={`space-y-9  lg:space-y-0  lg:mt-[10%] 2xl:mt-[54px] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex  z-[30]  lg:justify-around xl:justify-between w-full min-[1220px]:w-[90%]  xl:w-[80%] 2xl:w-[80%] px-5 lg:px-8 xl:px-0   `}>
+              <form className={`space-y-9  lg:space-y-0  lg:mt-[10%] 2xl:mt-[14%] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex  z-[30]  lg:justify-between xl:justify-between w-full min-[1220px]:w-[90%]  xl:w-[80%] 2xl:w-[80%] px-5 lg:px-8 xl:px-0   `}>
                 <SearchOption />
               </form>
               <div className="w-full mx-auto flex  relative lg:right-[50%] z-[15] ">

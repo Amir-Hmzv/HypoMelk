@@ -49,7 +49,7 @@ const PriceRange = () => {
         </div>
       </div>
       <div
-        className={`relative w-full rounded-[10px] p-2  shadow-lg  transition duration-200 lg:absolute    ${
+        className={`relative w-full rounded-[10px] p-2  shadow-lg  transition duration-200 lg:absolute bg-white my-2   ${
           isOpen ? "block" : "hidden"
         }`}
       >

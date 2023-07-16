@@ -3,7 +3,7 @@ import MainnTitles from "./MainTitles"
 
 const Hero = () => {
   return (
-    <div className=" w-full mx-auto  flex justify-between bg-red-400 ">
+    <div className=" w-full  mx-auto  flex justify-between bg-red-400 ">
         <div>
          <MainnTitles/>
         </div>

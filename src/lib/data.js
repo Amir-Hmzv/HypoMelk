@@ -74,3 +74,81 @@ export const data = [
   },
   
 ];
+
+
+export const Beachdata = [
+  {
+    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    time: "2 روز پیش",
+    price: "89 میلیارد",
+    priceByEachMeter: " متری ۶۰ تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: true,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/beach/18380580 1.png",
+      "/public/cards/beach/98 1.png",
+      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/public/cards/beach/98 1.png",
+
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: true,
+  },
+  {
+    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    time: "1 روز پیش",
+    price: "100 میلیارد",
+    priceByEachMeter: " متری 20 تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: true,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/beach/98 1.png",
+      "/public/cards/beach/18380580 1.png",
+      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: false,
+  },  {
+    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    time: "1 روز پیش",
+    price: "45 میلیارد",
+    priceByEachMeter: " متری 40 تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: false,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/public/cards/beach/98 1.png",
+      "/public/cards/beach/18380580 1.png",
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: true,
+  },  {
+    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    time: "1 روز پیش",
+    price: "۱۲۲ میلیارد",
+    priceByEachMeter: " متری 40 تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: true,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/public/cards/beach/18380580 1.png",
+      "/public/cards/beach/98 1.png",
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: true,
+  },
+  
+];
+

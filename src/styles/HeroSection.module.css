@@ -7,7 +7,7 @@
     font-weight: 700;
     line-height: 165.409%;
     letter-spacing: -0.805px; */
-  @apply text-center font-IRANYekanWeb  text-[23px] font-bold leading-[165.409%] tracking-[-0.805px] text-[#000] xl:text-right;
+  @apply text-center font-IRANYekanWeb  text-[23px] font-bold leading-[165.409%] tracking-[-0.805px]   text-[#000] xl:text-right;
 }
 
 .h1 {
