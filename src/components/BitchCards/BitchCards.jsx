@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Beachdata } from "../../lib/data";
+import { beachData, woodData } from "../../lib/data";
 import {ArrowIconLeft,ArrowIconRight,Card,HeadTitles,ObserveButton} from '../CardSldierAndContents'
 const BitchCards = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
@@ -64,7 +64,7 @@ const BitchCards = () => {
               },
             }}
           >
-            {Beachdata.map((item, key) => {
+            {beachData.map((item, key) => {
               return (
                 <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden absolute hover:-translate-y-10 inset-0 transform py-10  px-5   ">
                   <Card ownstyle={'hidden'} item={item} cardPadddng={'pb-3  '} />

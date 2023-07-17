@@ -6,7 +6,6 @@ import 'swiper/css/scrollbar';
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import {  useRef, useState } from "react";
 import ImageCardContent from "./ImageCardContent";
-import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 
 const ImageCard = ({ item }) => {
   const [slideBegOrNot, handleSlideByState] = useState({

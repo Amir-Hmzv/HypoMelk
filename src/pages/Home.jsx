@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import {
-  HeroSection,
   NewsHouses,
   TrustSection,
   GroupingSection,
+  HotOffers,
   
 } from "../components";
 import service from "../services/base.service";
@@ -33,8 +33,11 @@ const Home = () => {
       <NewsHouses />
       <TrustSection />
       <GroupingSection />
-      <BitchCards />
       <WoodSection/>
+      <BitchCards />
+      <HotOffers/>
+
+
       <br />
       <br />
       <br />

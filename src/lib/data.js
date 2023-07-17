@@ -76,9 +76,9 @@ export const data = [
 ];
 
 
-export const Beachdata = [
+export const woodData = [
   {
-    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    title: "فروش ویلای استخردار ساحلی در متل قو",
     time: "2 روز پیش",
     price: "89 میلیارد",
     priceByEachMeter: " متری ۶۰ تومان",
@@ -98,7 +98,7 @@ export const Beachdata = [
     Presell: true,
   },
   {
-    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    title: "فروش ویلای استخردار ساحلی در متل قو",
     time: "1 روز پیش",
     price: "100 میلیارد",
     priceByEachMeter: " متری 20 تومان",
@@ -132,7 +132,7 @@ export const Beachdata = [
     experience: "۱۰ سال تجربه",
     Presell: true,
   },  {
-    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    title: "فروش ویلای استخردار ساحلی در متل قو",
     time: "1 روز پیش",
     price: "۱۲۲ میلیارد",
     priceByEachMeter: " متری 40 تومان",
@@ -152,3 +152,85 @@ export const Beachdata = [
   
 ];
 
+
+export const beachData = [
+  {
+    title: "فروش ویلای استخردار ساحلی در متل قو",
+    time: "2 روز پیش",
+    price: "89 میلیارد",
+    priceByEachMeter: " متری ۶۰ تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: true,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
+      "/public/cards/woods/ocean1 1.png",
+      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: true,
+  },
+  {
+    title: "فروش ویلای استخردار ساحلی در متل قو",
+    time: "1 روز پیش",
+    price: "100 میلیارد",
+    priceByEachMeter: " متری 20 تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: true,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+
+      "/public/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
+      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+      "/public/cards/woods/ocean1 1.png",
+
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: false,
+  },  {
+    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    time: "1 روز پیش",
+    price: "45 میلیارد",
+    priceByEachMeter: " متری 40 تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: false,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+
+      "/public/cards/woods/ocean1 1.png",
+
+      "/public/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
+      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: true,
+  },  {
+    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    time: "1 روز پیش",
+    price: "۱۲۲ میلیارد",
+    priceByEachMeter: " متری 40 تومان",
+    informations: ["102 متر", "3 خوابه ", "2 طبقه", "نوساز"],
+    special: true,
+    logo: ApartmentIcon,
+    media: [
+      "/public/cards/woods/ocean1 1.png",
+      "/public/cards/beach/18380580 1.png",
+      "/public/cards/beach/98 1.png",
+    ],
+    profile: "/cards/profile/prof3.png",
+    userName: "پویا حدادی",
+    experience: "۱۰ سال تجربه",
+    Presell: true,
+  },
+  
+];
