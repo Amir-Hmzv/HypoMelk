@@ -64,7 +64,7 @@ const HotOffers = () => {
           >
             {woodData.map((item, key) => {
               return (
-                <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden flex items-baseline
+                <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden flex flex-wrap items-baseline
                  py-10  px-10   ">
                     <Horizontal item={item}/>
                 </SwiperSlide>

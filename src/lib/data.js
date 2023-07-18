@@ -78,7 +78,7 @@ export const data = [
 
 export const woodData = [
   {
-    title: "فروش ویلای استخردار ساحلی در متل قو",
+    title: "  استخردار ساحلی در متل قو",
     time: "2 روز پیش",
     price: "89 میلیارد",
     priceByEachMeter: " متری ۶۰ تومان",
