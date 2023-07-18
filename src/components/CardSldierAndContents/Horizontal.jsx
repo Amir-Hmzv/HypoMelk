@@ -1,30 +1,32 @@
 import React from "react";
+import InformationList from "./InformationList";
+import CardPrices from "./CardPrices";
+import ProflieCard from "./ProflieCard";
+import { data } from './../../lib/data';
+import style from "../../styles/SliderAndCards.module.css";
 
-export const Horizontal = () => {
+
+
+const Horizontal = ({ image, title, body, item }) => {
   return (
-    <div className="p-  relative mx-auto flex max-w-xs flex-col space-y-3 rounded-xl border border-white bg-white shadow-lg md:max-w-3xl md:flex-row md:justify-between md:space-x-5 md:space-y-0">
-      <div className="grid w-full place-items-center bg-white md:w-full">
-        <img
-          src="/public/cards/horizontal/Rectangle 1.png"
-          alt="tailwind logo"
-          className="rounded- w-[500px] object-cover   "
-        />
-      </div>
-      <div className="p- flex w-full flex-col space-y-2 bg-white md:w-2/3">
-        <div className="item-center flex justify-between"></div>
-        <h3 className="text-[21px] font-black   text-gray-800">
-          فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر{" "}
-        </h3>
-        <p className="text-base text-gray-500 md:text-lg">
-          The best kept secret of The Bahamas is the country’s sheer size and
-          diversity. With 16 major islands, The Bahamas is an unmatched
-          destination
-        </p>
-        <p className="text-xl font-black text-gray-800">
-          $110
-          <span className="text-base font-normal text-gray-600">/night</span>
-        </p>
-      </div>
+    <div style={{boxShadow:' 0px 0px 30.848529815673828px -12.702336311340332px rgba(12, 46, 96, 0.25)'}} className="flex flex-col sm:flex-row bg-white rounded-[17px] shadow-md overflow-hidden max-w-lg mx-auto px-4 py-2">
+    <div className="flex-shrink-">
+        <img className="min-h-[210px] rounded-[13px] w-full object-cover  sm:w-[600px]" src={'/public/cards/horizontal/Rectangle 2.png'} alt="" />
     </div>
+    <div className="mr-2 ">
+        <div className="flex justify-between items-baseline">
+            <h2 className="text-lg font-semibold text-gray-900 leading-[145.609%] tracking-[-0.4px]">
+                {item.title}
+            </h2>
+        </div>
+        <div className="">
+      <InformationList item={item}/>
+      <CardPrices item={item}/>
+      <ProflieCard item={item}/>
+        </div>
+    </div>
+</div>
   );
 };
+
+export default Horizontal;

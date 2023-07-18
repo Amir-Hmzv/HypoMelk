@@ -4,8 +4,7 @@ import { Pagination, A11y, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import {  woodData } from "../../lib/data";
-import {ArrowIconLeft,ArrowIconRight,Card,HeadTitles,ObserveButton} from '../CardSldierAndContents'
-import { Horizontal } from "../CardSldierAndContents/Horizontal";
+import {ArrowIconLeft,ArrowIconRight,Card,HeadTitles,Horizontal,ObserveButton} from '../CardSldierAndContents'
 const HotOffers = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
@@ -48,7 +47,7 @@ const HotOffers = () => {
             ref={SlideRef}
             dir="rtl"
             onSlideChange={onSlideChange}
-            spaceBetween={60}
+            spaceBetween={30}
             modules={[Pagination, Navigation, A11y]}
             className=" mx-10 text-center"
             breakpoints={{
@@ -56,7 +55,7 @@ const HotOffers = () => {
                 slidesPerView: 1,
               },
 
-              700: {
+              800: {
                 slidesPerView: 2,
               },
 
@@ -65,8 +64,9 @@ const HotOffers = () => {
           >
             {woodData.map((item, key) => {
               return (
-                <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden py-10  px-5   ">
-                    <Horizontal/>
+                <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden flex items-baseline
+                 py-10  px-10   ">
+                    <Horizontal item={item}/>
                 </SwiperSlide>
               );
             })}

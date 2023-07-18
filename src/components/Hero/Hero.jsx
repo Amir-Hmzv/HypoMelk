@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="flex flex-col">
           <MainnTitles />
           <MainSearchInput />
-          <form className={`space-y-9 w-ful relative bottom-8  lg:space-y-0  lg:mt-[22220%] 2xl:mt-[14%] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex  z-[30]  lg:justify-between   px-5 lg:px-8 xl:px-0   `}>
+          <form className={`space-y-9 w-ful relative bottom-8  lg:space-y-0   2xl:mt-[14%] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex  z-[30]  lg:justify-between   px-5 lg:px-8 xl:px-0   `}>
                 <SearchOption />
               </form>
         </div>
