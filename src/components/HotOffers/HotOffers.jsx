@@ -32,8 +32,8 @@ const HotOffers = () => {
       <div className=" flex items-stretch justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
       <ObserveButton style={'hidden sm:flex lg:mx-5'}/>
         <HeadTitles
-          smallTitle={`ویلای جنگلی مورد علاقت را  پیدا کن !`}
-          title={`جدیدترین ویلاهای جنگلی`}
+          smallTitle={`پیشنهادات داغ`}
+          title={`پیشنهادات باورنکردنی ملک ها`}
         />
 
         <div className="hidden  items-center sm:mx-7 sm:flex lg:mx-5">
@@ -55,7 +55,7 @@ const HotOffers = () => {
                 slidesPerView: 1,
               },
 
-              800: {
+              1100: {
                 slidesPerView: 2,
               },
 
