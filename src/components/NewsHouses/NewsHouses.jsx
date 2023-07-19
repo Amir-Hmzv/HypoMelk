@@ -66,7 +66,7 @@ const NewsHouses = () => {
           >
             {data.map((item, key) => {
               return (
-                <SwiperSlide key={key} className="lg:my-10 lg:px-1 px-5">
+                <SwiperSlide key={key} className="lg:my-10 lg:px-1 px-5 ">
                   <Card item={item}  cardPadddng={'p-2'} />
                 </SwiperSlide>
               );

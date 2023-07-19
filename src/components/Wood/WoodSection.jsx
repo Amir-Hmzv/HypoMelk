@@ -47,7 +47,7 @@ const WoodSection = () => {
             ref={SlideRef}
             dir="rtl"
             onSlideChange={onSlideChange}
-            spaceBetween={30}
+            spaceBetween={10}
             modules={[Pagination, Navigation, A11y]}
             className=" mx-10 text-center"
             breakpoints={{

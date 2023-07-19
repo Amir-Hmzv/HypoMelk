@@ -17,14 +17,14 @@ const Card = ({ item, ownstyle, cardPadddng }) => {
       onMouseEnter={() => setHovered(true)}
       style={springProps}
       onMouseLeave={() => setHovered(false)}
-      className={`z-20 mx-1 my-[18px]  max-h-[450px]    cursor-pointer rounded-[10px] ${cardPadddng} ease  duration-300 lg:mx-0  ${style.cardShadow} relative transform `}
+      className={`z-20 mx-1 my-[18px]    cursor-pointer rounded-[10px] ${cardPadddng} ease  duration-300 lg:mx-0  ${style.cardShadow} relative transform `}
     >
       <div>
         {" "}
         <ImageCard item={item} />
       </div>
-      <div className="mr-1">
-        <h1 className={`text-right text-[21px] ${style.cardTitle} mx-1 my-3`}>
+      <div className="mr-1  flex flex-col س">
+        <h1 className={`text-right text-[21px] max-h-7 my-4 ${style.cardTitle} mx-1 my-3`}>
           {item?.title}
         </h1>
         <div className={`${ownstyle}`}>

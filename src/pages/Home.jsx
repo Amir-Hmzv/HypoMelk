@@ -37,7 +37,7 @@ const Home = () => {
       <WoodSection/>
       <BitchCards />
       <HotOffers/>
-      <Gradient/>
+      <Gradient bg={'bg-jungle'} title={'خرید ویلا های جنگلی'}/>
 
       <br />
       <br />

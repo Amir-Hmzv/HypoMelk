@@ -22,9 +22,12 @@ export default {
       },
       backgroundImage: {
         hero: "url('/public/cards/news/backGround.png')",
-        hello:
+        beach:
           "url('/public/umbrella-chair-around-outdoor-swimming-pool-neary-sea-hotel-resort 2.png')",
+          jungle:
+          "url('/public/tropical-home-luxury-water-sky 2.png')",
       },
+      
     },
   },
   plugins: [],

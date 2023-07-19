@@ -47,7 +47,7 @@ const BitchCards = () => {
             ref={SlideRef}
             dir="rtl"
             onSlideChange={onSlideChange}
-            spaceBetween={0}
+            spaceBetween={10}
             modules={[Pagination, Navigation, A11y]}
             className=" mx-10 text-center"
             breakpoints={{

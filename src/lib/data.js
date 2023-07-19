@@ -3,7 +3,7 @@ import { ApartmentIcon } from "../assets/svg/svg";
 export const data = [
   {
     img: "/cards/news/Rectangle 18.png",
-    title: "فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
+    title: " آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر",
     time: "2 روز پیش",
     price: "۲۳۲ میلیارد",
     priceByEachMeter: " متری ۶۰ تومان",
@@ -51,7 +51,7 @@ export const data = [
       "/cards/news/Rectangle 19.png",
     ],
     profile: "/cards/profile/prof3.png",
-    userName: "پویا حدادی",
+    userName: "پدی",
     experience: "۱۰ سال تجربه",
     Presell: true,
   },  {
@@ -86,10 +86,10 @@ export const woodData = [
     special: true,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/beach/18380580 1.png",
-      "/public/cards/beach/98 1.png",
-      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
-      "/public/cards/beach/98 1.png",
+      "/cards/beach/18380580 1.png",
+      "/cards/beach/98 1.png",
+      "/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/cards/beach/98 1.png",
 
     ],
     profile: "/cards/profile/prof3.png",
@@ -106,9 +106,9 @@ export const woodData = [
     special: true,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/beach/98 1.png",
-      "/public/cards/beach/18380580 1.png",
-      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/cards/beach/98 1.png",
+      "/cards/beach/18380580 1.png",
+      "/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
     ],
     profile: "/cards/profile/prof3.png",
     userName: "پویا حدادی",
@@ -123,9 +123,9 @@ export const woodData = [
     special: false,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
-      "/public/cards/beach/98 1.png",
-      "/public/cards/beach/18380580 1.png",
+      "/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/cards/beach/98 1.png",
+      "/cards/beach/18380580 1.png",
     ],
     profile: "/cards/profile/prof3.png",
     userName: "پویا حدادی",
@@ -140,9 +140,9 @@ export const woodData = [
     special: true,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
-      "/public/cards/beach/18380580 1.png",
-      "/public/cards/beach/98 1.png",
+      "/cards/beach/Neighbourhood-1-Baan-Banyan-Pool-and-Tropical-Jungle-view 1.png",
+      "/cards/beach/18380580 1.png",
+      "/cards/beach/98 1.png",
     ],
     profile: "/cards/profile/prof3.png",
     userName: "پویا حدادی",
@@ -163,9 +163,9 @@ export const beachData = [
     special: true,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
-      "/public/cards/woods/ocean1 1.png",
-      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+      "/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
+      "/cards/woods/ocean1 1.png",
+      "/cards/woods/oceanview-luxury-villa-phuket 1.png",
 
     ],
     profile: "/cards/profile/prof3.png",
@@ -184,9 +184,9 @@ export const beachData = [
     media: [
       "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
 
-      "/public/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
-      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
-      "/public/cards/woods/ocean1 1.png",
+      "/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
+      "/cards/woods/oceanview-luxury-villa-phuket 1.png",
+      "/cards/woods/ocean1 1.png",
 
     ],
     profile: "/cards/profile/prof3.png",
@@ -202,12 +202,12 @@ export const beachData = [
     special: false,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+      "/cards/woods/oceanview-luxury-villa-phuket 1.png",
 
-      "/public/cards/woods/ocean1 1.png",
+      "/cards/woods/ocean1 1.png",
 
-      "/public/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
-      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+      "/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
+      "/cards/woods/oceanview-luxury-villa-phuket 1.png",
 
     ],
     profile: "/cards/profile/prof3.png",
@@ -223,9 +223,9 @@ export const beachData = [
     special: true,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/woods/ocean1 1.png",
-      "/public/cards/beach/18380580 1.png",
-      "/public/cards/beach/98 1.png",
+      "/cards/woods/ocean1 1.png",
+      "/cards/beach/18380580 1.png",
+      "/cards/beach/98 1.png",
     ],
     profile: "/cards/profile/prof3.png",
     userName: "پویا حدادی",
