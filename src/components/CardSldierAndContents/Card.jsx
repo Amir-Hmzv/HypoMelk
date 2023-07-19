@@ -18,7 +18,7 @@ const Card = ({ item ,ownstyle,cardPadddng}) => {
   return (
     <animated.div
     onMouseEnter={() => setHovered(true)} style={springProps}
-    onMouseLeave={() => setHovered(false)}      className={`z-20 mx-10 my-[18px]   cursor-pointer rounded-[10px] ${cardPadddng} lg:mx-0 ease duration-300  ${style.cardShadow} relative transform `}
+    onMouseLeave={() => setHovered(false)}      className={`z-20 mx-10 my-[18px]   cursor-pointer rounded-[10px] ${cardPadddng} lg:mx-2 ease duration-300  ${style.cardShadow} relative transform `}
     >
       <div>
         {" "}

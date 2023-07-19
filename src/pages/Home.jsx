@@ -14,6 +14,7 @@ import BitchCards from "../components/BitchCards/BitchCards";
 // import jungleCards from '../components/jungleCards/jungleCards'
 import WoodSection from "../components/Wood/WoodSection";
 import Hero from "../components/Hero/Hero";
+import Gradient from "../components/GradientSection/Gradient";
 const Home = () => {
   const [heroImage, setHeroImage] = useState(``);
   useEffect(() => {
@@ -36,7 +37,7 @@ const Home = () => {
       <WoodSection/>
       <BitchCards />
       <HotOffers/>
-
+      <Gradient/>
 
       <br />
       <br />

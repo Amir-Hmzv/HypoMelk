@@ -3,24 +3,30 @@ import style from "../../styles/SliderAndCards.module.css";
 import { convertToPersianNumber } from "../../lib/helper";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
-const ImageCardContent = ({ item, ...rest }) => {
+const ImageHorizontalCardContent =({ item, ...rest }) => {
   const { handleNext, handlePrev, isLast, isFirst, image } = rest;
   console.log(handleNext);
   return (
-    <div className="relative inset-0 ">
+    <div className="relative  ">
       <div
         onClick={handleNext}
-        className={`prev absolute left-3 top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isLast && 'opacity-50'}`}
+        className={`prev absolute left-4 top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isLast && 'opacity-50'}`}
       >
         <ChevronLeftIcon className="h-4 w-4" />
       </div>
       <div
         onClick={handlePrev}
-        className={`next absolute right-3 top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isFirst && 'opacity-50'}`}
+        className={`next absolute right-4 top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isFirst && 'opacity-50'}`}
       >
         <ChevronRightIcon className="h-4 w-4" />
       </div>
-      <img className="  h-[200px] w-full rounded-t-[16px] inline" src={image} alt="" />
+      <div>
+      <img
+            className="w-[100%] md:w-[94%]  rounded-[13px] object-cover inline-block lg:h-[250px] lg:w-aut lg:w-[350px] "
+            src={image}
+            alt=""
+          />
+      </div>
       <div
         className={`absolute bottom-2 left-[10%] rounded-md font-IRANYekanWeb bg-white p-2 sm:left-3 ${style.timeText}`}
       >
@@ -41,7 +47,7 @@ const ImageCardContent = ({ item, ...rest }) => {
           پیش فروش
         </div>
       </div>
-      <div className="absolute left-5 top-3 rounded-md bg-white p-2 ">
+      <div className="absolute left-3 top-3 rounded-md bg-white p-2 ">
         {item?.logo}
       </div>
       <div
@@ -55,5 +61,6 @@ const ImageCardContent = ({ item, ...rest }) => {
     </div>
   );
 };
+export default ImageHorizontalCardContent;
 
-export default ImageCardContent;
+

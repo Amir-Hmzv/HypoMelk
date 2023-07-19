@@ -5,6 +5,9 @@ import ProflieCard from "./ProflieCard";
 import { data } from "./../../lib/data";
 import style from "../../styles/SliderAndCards.module.css";
 import { useSpring,animated } from "@react-spring/web";
+import ImageHorizontalCard from "./ImageHorizontalCard";
+import ImageCard from "./ImageCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Horizontal = ({ image, title, body, item }) => {
   const [hovered, setHovered] = useState(false);
@@ -22,18 +25,13 @@ const Horizontal = ({ image, title, body, item }) => {
       onMouseEnter={() => setHovered(true)} style={springProps}
       onMouseLeave={() => setHovered(false)}      
       
-        className="mx-auto flex  ease duration-300 transform w-auto max-w-2xl cursor-pointer flex-col justify-between overflow-hidden rounded-[17px] bg-white px-2 py-3 shadow-md sm:flex-row"
+        className="mx-auto md:flex  relative shadowHorizontal ease duration-300 transform w-auto max-w-2xl cursor-pointer s flex-col justify-between overflow-hidden rounded-[17px] bg-white px-2 py-3 sm:flex-row"
       >
-        <div className="flex-shrink-">
-          <img
-            className="w-full rounded-[13px] object-cover lg:h-[250px] lg:w-auto lg:max-w-[250px] "
-            src={"/public/cards/horizontal/Rectangle 2.png"}
-            alt=""
-          />
-        </div>
+     
+   <ImageHorizontalCard item={item}/>
         <div className="max-[300px] mr-2 ">
-          <div className="flex text-right lg:min-h-[80px]">
-            <h2 className="tr text-[21px]  font-semibold leading-[145.609%] text-gray-400">
+          <div className="flex text-right  lg:min-h-[80px]">
+            <h2 className="tr text-[21px]  tracking-[-0.4px]  font-IRANYekanWeb leading-[145.609%] text-[#101737] font-[700]">
               {item.title}
             </h2>
           </div>

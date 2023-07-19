@@ -1,6 +1,9 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState } from "react";
+import { A11y, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ImageHorizontalCardContent from "./ImageHorizontalCardContent";
 
-const ImageHorizontalCard = ({item}) => {
+const ImageHorizontalCard = ({ item }) => {
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -31,11 +34,12 @@ const ImageHorizontalCard = ({item}) => {
         onSlideChange={onSlideChange}
         modules={[Navigation, A11y, Pagination]}
         className="mySwiper"
+        slidesPerView={1}
       >
         {item.media.map((image, i) => {
           return (
             <SwiperSlide key={i} className="">
-              <ImageCardContent
+              <ImageHorizontalCardContent
                 item={item}
                 image={image}
                 handleNext={handleNext}
@@ -51,4 +55,4 @@ const ImageHorizontalCard = ({item}) => {
     </>
   );
 };
-export default ImageHorizontalCard
+export default ImageHorizontalCard;
