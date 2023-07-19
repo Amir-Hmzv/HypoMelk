@@ -47,7 +47,7 @@ const NewsHouses = () => {
             ref={SlideRef}
             dir="rtl"
             onSlideChange={onSlideChange}
-            spaceBetween={30}
+            spaceBetween={10}
             modules={[Pagination, Navigation, A11y]}
             className="relative mx-20 text-center "
             breakpoints={{

@@ -25,7 +25,7 @@ const Horizontal = ({ image, title, body, item }) => {
       onMouseEnter={() => setHovered(true)} style={springProps}
       onMouseLeave={() => setHovered(false)}      
       
-        className="mx-auto md:flex  relative shadowHorizontal ease duration-300 transform w-auto max-w-2xl cursor-pointer s flex-col justify-between overflow-hidden rounded-[17px] bg-white px-2 py-3 sm:flex-row"
+        className="mx-auto md:flex   relative shadowHorizontal ease duration-300 transform w-auto max-w-2xl cursor-pointer s flex-col justify-between overflow-hidden rounded-[17px] bg-white px-2 py-3 sm:flex-row"
       >
      
    <ImageHorizontalCard item={item}/>

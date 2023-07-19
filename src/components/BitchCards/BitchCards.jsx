@@ -47,7 +47,7 @@ const BitchCards = () => {
             ref={SlideRef}
             dir="rtl"
             onSlideChange={onSlideChange}
-            spaceBetween={10}
+            spaceBetween={0}
             modules={[Pagination, Navigation, A11y]}
             className=" mx-10 text-center"
             breakpoints={{
@@ -66,7 +66,7 @@ const BitchCards = () => {
           >
             {beachData.map((item, key) => {
               return (
-                <SwiperSlide key={key} className="lg:my-10 lg:px-1 overflow-hidden absolute hover:-translate-y-10 inset-0 transform py-10  px-5   ">
+                <SwiperSlide key={key} className="lg:my-10 lg:px-1  space-x-2 overflow-hidden absolute hover:-translate-y-10 inset-0 transform py-10  px-5   ">
                   <Card ownstyle={'hidden'} item={item} cardPadddng={'pb-3  '} />
                 </SwiperSlide>
               );
