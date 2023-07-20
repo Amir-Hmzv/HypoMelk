@@ -1,9 +1,9 @@
 import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 
-const ArrowIconRight = ({isFirst,handlePrev}) => {
+const ArrowIconRight = ({isFirst,handlePrev,customStyle}) => {
   return (
     <div
-    className={`ml-2 cursor-pointer rounded-[10px] bg-main-green p-3 text-white ${
+    className={`ml-2 cursor-pointer  ${customStyle} rounded-[10px] bg-main-green p-3 text-white ${
       isFirst && "opacity-50"
     } `}
     onClick={handlePrev}

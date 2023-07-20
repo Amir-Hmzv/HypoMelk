@@ -17,8 +17,9 @@ import Hero from "../components/Hero/Hero";
 import Gradient from "../components/GradientSection/Gradient";
 import PopularSpots from "../components/PopularSpots/PopularSpots";
 import Representatives from "../components/Representatives/Representatives";
+import Weblog from "../components/Weblog/Weblog";
 const Home = () => {
-  const [heroImage, setHeroImage] = useState(``);
+  const [users, setUsers] = useState([]);
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -26,7 +27,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    service.get(`/real/HomePage/`, (res) => setHeroImage(res.data));
+    service.get(`/real/usersinfo/`, (res) => setUsers(res.data));
   }, []);
 
   return (
@@ -41,7 +42,9 @@ const Home = () => {
       <HotOffers/>
       <Gradient bg={'bg-jungle'} title={'خرید ویلا های جنگلی'}/>
       <PopularSpots/>
-      <Representatives/>
+      <Representatives users={users}/>
+      <Gradient bg={'bg-beach'} title={'خرید ویلا های ساحلی'} style={'mt-[150px]'}/>
+      <Weblog/>
       <br />
       <br />
       <br />

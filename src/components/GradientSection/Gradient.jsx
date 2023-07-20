@@ -1,8 +1,8 @@
 import React from "react";
 
-const Gradient = ({ title,bg }) => {
+const Gradient = ({ title,bg,style }) => {
   return (
-    <div className="mx-auto hidden max-w-[1201px] cursor-pointer  rounded-xl px-8 md:block xl:px-0">
+    <div className={`mx-auto hidden max-w-[1201px] cursor-pointer ${style} rounded-xl px-8 md:block xl:px-0`}>
       <div className=" flex h-[223px] w-full    flex-row-reverse justify-center rounded-[17px]">
         <div className="relative h-full w-[45%] rounded-l-[17px] bg-main-green to-transparent">
           <div className="absolute  left-[50%]  top-[50%] translate-x-[-30%] translate-y-[-50%]  items-center ">

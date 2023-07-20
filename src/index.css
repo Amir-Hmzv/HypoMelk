@@ -46,3 +46,11 @@
   box-shadow: 0px 0px 30.848529815673828px -12.702336311340332px rgba(12, 46, 96, 0.25);
 
 }
+
+
+.sp .swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(5.5);
+  background-color: red !important;
+}

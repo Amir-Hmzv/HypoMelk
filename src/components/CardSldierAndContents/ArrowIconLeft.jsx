@@ -1,9 +1,9 @@
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 
-const ArrowIconLeft = ({isLast,handleNext}) => {
+const ArrowIconLeft = ({isLast,handleNext,customStyle}) => {
   return (
     <div
-            className={`cursor-pointer rounded-[10px] bg-main-green p-3 text-white disabled:opacity-60 ${
+            className={`cursor-pointer ${customStyle} rounded-[10px] bg-main-green p-3 text-white disabled:opacity-60 ${
               isLast && "opacity-50"
             } `}
             onClick={handleNext}

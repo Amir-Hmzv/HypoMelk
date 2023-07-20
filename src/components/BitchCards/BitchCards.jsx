@@ -41,7 +41,7 @@ const BitchCards = () => {
           <ArrowIconLeft isLast={isLast} handleNext={handleNext} />
         </div>
       </div>
-      <div className="bg-[#efefef p-4">
+      <div className=" p-4">
         <div data-aos="fade-up" className="">
           <Swiper
             ref={SlideRef}
