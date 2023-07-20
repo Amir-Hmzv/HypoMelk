@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { beachData, woodData } from "../../lib/data";
+import { beachData } from "../../lib/data";
 import {ArrowIconLeft,ArrowIconRight,Card,HeadTitles,ObserveButton} from '../CardSldierAndContents'
 const BitchCards = () => {
   const [slideBegOrNot, handleSlideByState] = useState({

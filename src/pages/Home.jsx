@@ -15,6 +15,8 @@ import BitchCards from "../components/BitchCards/BitchCards";
 import WoodSection from "../components/Wood/WoodSection";
 import Hero from "../components/Hero/Hero";
 import Gradient from "../components/GradientSection/Gradient";
+import PopularSpots from "../components/PopularSpots/PopularSpots";
+import Representatives from "../components/Representatives/Representatives";
 const Home = () => {
   const [heroImage, setHeroImage] = useState(``);
   useEffect(() => {
@@ -38,7 +40,8 @@ const Home = () => {
       <BitchCards />
       <HotOffers/>
       <Gradient bg={'bg-jungle'} title={'خرید ویلا های جنگلی'}/>
-
+      <PopularSpots/>
+      <Representatives/>
       <br />
       <br />
       <br />

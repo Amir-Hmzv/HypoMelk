@@ -26,6 +26,8 @@ export default {
           "url('/public/umbrella-chair-around-outdoor-swimming-pool-neary-sea-hotel-resort 2.png')",
           jungle:
           "url('/public/tropical-home-luxury-water-sky 2.png')",
+          spot:
+          "url('/public/spots/bgSpot.png')",
       },
       
     },

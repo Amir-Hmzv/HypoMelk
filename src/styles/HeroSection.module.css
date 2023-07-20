@@ -4,7 +4,7 @@
 }
 
 .h1 {
-  @apply mb-[0px] my-[29px]  text-center font-IRANYekanWeb text-[37px] font-extrabold leading-[139.909%] tracking-[-1.425px] text-[#000] md:text-[47px] lg:text-[57px] xl:text-right;
+  @apply mb-[0px] my-[29px]  text-center  font-IRANYekanWeb text-[33px] sm:text-[37px] font-extrabold leading-[139.909%] tracking-[-1.425px] text-[#000] md:text-[47px] lg:text-[57px] xl:text-right;
 }
 
 .titleDesc {

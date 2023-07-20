@@ -2,7 +2,7 @@ import React from 'react'
 
 const GroupingContent = ({icon,propertyCount,propertyType,style,img}) => {
   return (
-    <div data-aos="fade-up" className={`relative w-[367px] cursor-pointer rounded-[17px] ${style} bg-transparent shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]`}>
+    <div data-aos="fade-up" className={`relative w-[367px] cursor-pointer rounded-[17px] ${style} bg-transparent px-4 lg:px-0`}>
     <img
       src={img}
       className="h-auto w-full rounded-[17px] "

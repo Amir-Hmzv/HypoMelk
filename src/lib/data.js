@@ -182,7 +182,7 @@ export const beachData = [
     special: true,
     logo: ApartmentIcon,
     media: [
-      "/public/cards/woods/oceanview-luxury-villa-phuket 1.png",
+      "/cards/woods/oceanview-luxury-villa-phuket 1.png",
 
       "/cards/woods/Large-hotelimages-royal-garden-villas-275980-1 1.png",
       "/cards/woods/oceanview-luxury-villa-phuket 1.png",
