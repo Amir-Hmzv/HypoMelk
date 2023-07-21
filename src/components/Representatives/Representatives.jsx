@@ -38,8 +38,8 @@ const Representatives = ({ users }) => {
         <div className="relative mx-auto  max-w-[1201px] py-10 ">
           <div className="   md:px-5 lg:px-8  xl:px-0  ">
             <HeadTitles
-              smallTitle={`   ویلای ساحلی مورد علاقتو پیدا کن !`}
-              title={`جدیدترین ویلا های ساحلی`}
+              smallTitle={`نمایندگان با پشتکار ما`}
+              title={`با نمایندگان ما آشنا شوید`}
             />
             <div className="mt-[23px]  flex justify-center  " data-aos='fade-up' >
               <div>

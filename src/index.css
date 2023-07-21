@@ -48,9 +48,7 @@
 }
 
 
-.sp .swiper-slide-active {
-  opacity: 1;
-  z-index: 1;
-  transform: scale(5.5);
-  background-color: red !important;
+.sp .swiper-slide-active .bb {
+  padding: 0 !important;
+  /* transform: scale(1.1); */
 }
