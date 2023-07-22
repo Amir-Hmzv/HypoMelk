@@ -45,16 +45,7 @@ const Home = () => {
       <Representatives users={users}/>
       <Gradient bg={'bg-beach'} title={'خرید ویلا های ساحلی'} style={'mt-[150px]'}/>
       <Weblog/>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+ 
     </>
   );
 };

@@ -5,10 +5,31 @@ import {
   HeadTitles,
   ObserveButton,
 } from "../CardSldierAndContents";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CenterCardWeblog from "./CenterCardWeblog";
+import {
+  A11y,
+  Autoplay,
+
+} from "swiper/modules";
+import service from "../../services/base.service";
+import 'swiper/css';
 
 const Weblog = () => {
+  const [weblogCards, setweblogCards] = useState([]);
+
+  useEffect(() => {
+    service.get("/real/weblog/", (res) => {
+      const originalResults = res.data?.results;
+      const repeatedResults = originalResults.concat(originalResults.slice());
+      setweblogCards(repeatedResults);
+    });
+  
+    return () => {};
+  }, []);
+
+  console.log(weblogCards.length);
+
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -28,9 +49,17 @@ const Weblog = () => {
       isLast: swiper.isEnd,
     });
   };
+
+  const handleReachEnd = () => {
+    setWeblogCards(weblogCards => {
+      const shiftedCards = [...weblogCards];
+      shiftedCards.push(shiftedCards.shift());
+      return shiftedCards;
+    });
+  }
   const { isLast, isFirst } = slideBegOrNot;
   return (
-    <div className="mt-64 w-full bg-gray-100 py-14 ">
+    <div className="mt-64 w-full overflow-visible bg-gray-100 py-14 ">
       <div className="mx-auto max-w-[1201px]">
         <div className=" flex items-stretch justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
           <ObserveButton style={"hidden sm:flex lg:mx-5"} />
@@ -44,33 +73,41 @@ const Weblog = () => {
             <ArrowIconLeft isLast={false} handleNext={handleNext} />
           </div>
         </div>
-        <div className="mt-10  " data-aos='fade-up'>
+        <div className="mt-10  " data-aos="fade-up">
           <Swiper
-            slidesPerView={3}
-            roundLengths={true}
-            loop={true}
             ref={SlideRef}
             onSlideChange={onSlideChange}
-            spaceBetween={30}
+            dir="rtl"
+            spaceBetween={80}
             centeredSlides={true}
-            className="sp"
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: true,
+              reverseDirection: true
+            }}
+            slidesPerView={3}
+            loop={true}
+            className={`sp  `}
+            modules={[A11y, Autoplay]}
+       
           >
-            <SwiperSlide className="transform "><CenterCardWeblog/></SwiperSlide>
-            <SwiperSlide className=""><CenterCardWeblog/></SwiperSlide>
-            <SwiperSlide className=""><CenterCardWeblog/></SwiperSlide>
-            <SwiperSlide className=""><CenterCardWeblog/></SwiperSlide>
-            <SwiperSlide className=""><CenterCardWeblog/></SwiperSlide>
-            <SwiperSlide className=""><CenterCardWeblog/></SwiperSlide>
-
+            {weblogCards && weblogCards.map((item) => (
+              <SwiperSlide key={item.id} className="w-full h-full   ">
+                <CenterCardWeblog item={item}  />
+              </SwiperSlide>
+            ))}
+         
 
           </Swiper>
-             <div className="my-10 space-y-8">
+          <div className="my-10 space-y-8">
             <div className="flex justify-center sm:hidden">
-              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} />
-              <ArrowIconLeft isLast={isLast} handleNext={handleNext} />
+              <ArrowIconRight isFirst={false} handlePrev={handlePrev} />
+              <ArrowIconLeft isLast={false} handleNext={handleNext} />
             </div>
-          
-            <ObserveButton style={'flex w-[50%] mx-auto justify-center sm:hidden '}/>
+
+            <ObserveButton
+              style={"flex w-[50%] mx-auto justify-center sm:hidden "}
+            />
           </div>
         </div>
       </div>

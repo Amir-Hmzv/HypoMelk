@@ -42,8 +42,8 @@ const Representatives = ({ users }) => {
               title={`با نمایندگان ما آشنا شوید`}
             />
             <div className="mt-[23px]  flex justify-center  " data-aos='fade-up' >
-              <div>
-              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} customStyle={'relative top-[50%] translate-y-[-50%]'}/>
+              <div className=" flex items-center">
+              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} customStyle={'r'}/>
               </div>
               
               <Swiper
@@ -62,7 +62,7 @@ const Representatives = ({ users }) => {
                   },
 
                   1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                   },
                 }}
               >
@@ -72,8 +72,8 @@ const Representatives = ({ users }) => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <div className="">
-              <ArrowIconLeft isLast={isLast} handleNext={handleNext} customStyle={'relative right-2 top-[50%] translate-y-[-50%]'} />
+              <div className="flex items-center">
+              <ArrowIconLeft isLast={isLast} handleNext={handleNext} customStyle={']'} />
               </div>
               {/* <RepresentativeCard/>
                 <RepresentativeCard/>
