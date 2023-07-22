@@ -37,9 +37,9 @@ const CenterCardWeblog = ({ item }) => {
 </svg>
 
   return (
-    <div className="bb      w-full h-full  px-2" style={{boxShadow: '0px 0px 34px -9px rgba(12, 46, 96, 0.25)'
+    <div className="bb   flex justify-center   w-full h-full  px-2" >
+      <div className=" max-w-lg m-4 overflow-hidden rounded-[17px]  bg-white p-2   " style={{boxShadow: '0px 0px 34px -9px rgba(12, 46, 96, 0.25)'
     }}>
-      <div className=" max-w-l overflow-hidden rounded-[17px]  bg-white p-2   ">
         <div className=" ">
           <div className="relative flex justify-center">
             <img
@@ -76,36 +76,12 @@ const CenterCardWeblog = ({ item }) => {
             <div className="absolute right-3  top-3 flex flex-row-reverse rounded-[9px]  bg-[#6DC175] p-1 text-right font-IRANYekanWeb text-sm font-extrabold not-italic leading-[165.409%] tracking-[-0.49px] text-white lg:p-2 ">
               <span className="mx-2">دو دقیقه مطالعه</span>
               <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="24"
-                  viewBox="0 0 23 24"
-                  fill="none"
-                >
-                  <path
-                    d="M19.5653 13.0747C19.5653 17.608 15.8861 21.2871 11.3529 21.2871C6.81963 21.2871 3.14047 17.608 3.14047 13.0747C3.14047 8.54146 6.81963 4.8623 11.3529 4.8623C15.8861 4.8623 19.5653 8.54146 19.5653 13.0747Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.3529 8.14722V12.84"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M8.5372 2.51587H14.1686"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" width={23} height={24} viewBox="0 0 23 24" fill="none">
+  <path d="M19.5653 13.0747C19.5653 17.608 15.8861 21.2871 11.3529 21.2871C6.81963 21.2871 3.14047 17.608 3.14047 13.0747C3.14047 8.54146 6.81963 4.8623 11.3529 4.8623C15.8861 4.8623 19.5653 8.54146 19.5653 13.0747Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M11.3529 8.14722V12.84" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path d="M8.5372 2.51587H14.1686" stroke="white" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+</svg>
+
               </span>
             </div>
           </div>

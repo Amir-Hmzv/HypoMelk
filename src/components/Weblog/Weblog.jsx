@@ -10,6 +10,7 @@ import CenterCardWeblog from "./CenterCardWeblog";
 import {
   A11y,
   Autoplay,
+  Pagination,
 
 } from "swiper/modules";
 import service from "../../services/base.service";
@@ -73,32 +74,43 @@ const Weblog = () => {
             <ArrowIconLeft isLast={false} handleNext={handleNext} />
           </div>
         </div>
-        <div className="mt-10  " data-aos="fade-up">
-          <Swiper
-            ref={SlideRef}
-            onSlideChange={onSlideChange}
-            dir="rtl"
-            spaceBetween={80}
-            centeredSlides={true}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: true,
-              reverseDirection: true
-            }}
-            slidesPerView={3}
-            loop={true}
-            className={`sp  `}
-            modules={[A11y, Autoplay]}
-       
-          >
-            {weblogCards && weblogCards.map((item) => (
-              <SwiperSlide key={item.id} className="w-full h-full   ">
+        <div className=" " data-aos="fade-up">
+        <Swiper
+     ref={SlideRef}
+     onSlideChange={onSlideChange}
+     dir="rtl"
+grabCursor={true}
+     spaceBetween={80}
+     centeredSlides={true}
+     autoplay={{
+       delay: 3500,
+       disableOnInteraction: true,
+       reverseDirection: true
+     }}
+     slidesPerView={3}
+     loop={true}
+     className={`sp  `}
+     modules={[A11y, Autoplay]}
+     breakpoints={{
+      0: {
+        slidesPerView: 1,
+      },
+
+      700: {
+        slidesPerView: 2,
+      },
+
+      1024: {
+        slidesPerView: 3,
+      },
+    }}
+  >
+   {weblogCards && weblogCards.map((item,i) => (
+              <SwiperSlide key={i} className="w-full h-full   ">
                 <CenterCardWeblog item={item}  />
               </SwiperSlide>
             ))}
-         
-
-          </Swiper>
+  </Swiper>
           <div className="my-10 space-y-8">
             <div className="flex justify-center sm:hidden">
               <ArrowIconRight isFirst={false} handlePrev={handlePrev} />
