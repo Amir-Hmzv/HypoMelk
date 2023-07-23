@@ -45,16 +45,16 @@ const MobileSection = ({ isOpen, setIsOpen }) => {
               <a href="#" className={style.mobileHoverLink}>
                 خانه
               </a>
-              <span className=" h-[1px] w-[50%] bg-main-green	 "></span>
+              <span className=" h-[1px] ml-4  w-[50%] bg-main-green	 "></span>
               <span>
                 <HomeIcon className="relative top-2 ml-4 h-6 w-6 text-main-green" />
               </span>
             </div>
-            <div className="flex items-baseline justify-between">
+            <div className="flex items-baseline justify-between ">
               <a href="#" className={style.mobileHoverLink}>
                 درباره ما
               </a>
-              <span className=" h-[1px] w-[50%] bg-main-green	 "></span>
+              <span className=" h-[1px]  ml-4 w-[50%]  bg-main-green	 "></span>
               <span>
                 <UsersIcon className="relative top-2 ml-4 h-6 w-6 text-main-green" />
               </span>
@@ -63,7 +63,7 @@ const MobileSection = ({ isOpen, setIsOpen }) => {
               <a href="#" className={style.mobileHoverLink}>
                 وبلاگ
               </a>
-              <span className=" h-[1px] w-[50%] bg-main-green	 "></span>
+              <span className=" h-[1px] ml-4  w-[50%] bg-main-green	 "></span>
               <span>
                 <GlobeAltIcon className="relative top-2 ml-4 h-6 w-6 text-main-green" />
               </span>
@@ -72,7 +72,7 @@ const MobileSection = ({ isOpen, setIsOpen }) => {
               <a href="#" className={style.mobileHoverLink}>
                 تماس با ما
               </a>
-              <span className=" h-[1px] w-[50%] bg-main-green	 "></span>
+              <span className=" h-[1px] ml-4  w-[50%] bg-main-green	 "></span>
               <span>
                 <PhoneIcon className="relative top-2 ml-4 h-6  w-6 text-main-green" />
               </span>

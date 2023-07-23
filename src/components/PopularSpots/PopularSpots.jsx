@@ -11,7 +11,7 @@ const PopularSpots = () => {
             title={"منطقه های محبوب"}
           />
         </div>
-        <div className=" grid grid-cols-2 place-content-center place-items-center md:grid-cols-3 xl:grid-cols-4 ">
+        <div  data-aos={'fade-up'} className=" grid grid-cols-2 place-content-center place-items-center md:grid-cols-3 xl:grid-cols-4 ">
           <Spot title={"خیابان پهلوی"} image={"/spots/1.png"} />
           <Spot title={"خیابان شیر و خورشید"} image={"/spots/2.png"} />
           <Spot title={"خیابان امام رضا"} image={"/spots/1.png"} />

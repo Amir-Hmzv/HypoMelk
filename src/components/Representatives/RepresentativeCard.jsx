@@ -2,8 +2,8 @@
 const RepresentativeCard = ({item}) => {
     console.log(item);
   return (
-<div className="flex justify-center ">
-<div className="relative  min-h-[360px] overflow-auto w-[302px] py-20 rounded-[36px] ease-linear duration-150  hover:border-2 bg-white">
+<div className="flex justify-center w-full items-center pl-2">
+<div className="relative  min-h-[360px] overflow-auto w-[302px] py-20 rounded-[36px] ease-linear duration-150 md:border-0 border-2  hover:border-2 bg-white">
     <div className="absolute left-[50%] top-[25%]  translate-x-[-50%] translate-y-[-50%] ">
       <div className="relative h-[150px] w-[150px] rounded-full bg-red-500">
         <div className="relative space-y-3 rounded-full flex flex-col  text-center items-center">

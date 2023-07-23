@@ -28,7 +28,7 @@ const NewsHouses = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <div className="relative mx-auto mt-[170px] max-w-[1201px] ">
+    <div className="relative mx-auto mt-[100px] max-w-[1201px] ">
       <div className=" flex items-stretch justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
       <ObserveButton style={'hidden sm:flex lg:mx-5'}/>
         <HeadTitles

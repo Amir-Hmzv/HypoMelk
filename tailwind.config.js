@@ -21,13 +21,13 @@ export default {
         precell: "#55499B",
       },
       backgroundImage: {
-        hero: "url('/public/cards/news/backGround.png')",
+        hero: "url('/cards/news/backGround.png')",
         beach:
-          "url('/public/umbrella-chair-around-outdoor-swimming-pool-neary-sea-hotel-resort 2.png')",
+          "url('/umbrella-chair-around-outdoor-swimming-pool-neary-sea-hotel-resort 2.png')",
           jungle:
-          "url('/public/tropical-home-luxury-water-sky 2.png')",
+          "url('/tropical-home-luxury-water-sky 2.png')",
           spot:
-          "url('/public/spots/bgSpot.png')",
+          "url('/spots/bgSpot.png')",
       },
       
     },

@@ -43,7 +43,7 @@ const Representatives = ({ users }) => {
             />
             <div className="mt-[23px]  flex justify-center  " data-aos='fade-up' >
               <div className=" flex items-center">
-              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} customStyle={'r'}/>
+              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} customStyle={'relative md:static '}/>
               </div>
               
               <Swiper
@@ -73,7 +73,7 @@ const Representatives = ({ users }) => {
                 ))}
               </Swiper>
               <div className="flex items-center">
-              <ArrowIconLeft isLast={isLast} handleNext={handleNext} customStyle={']'} />
+              <ArrowIconLeft isLast={isLast} handleNext={handleNext} customStyle={'relative md:static  right-[1px]'} />
               </div>
               {/* <RepresentativeCard/>
                 <RepresentativeCard/>

@@ -31,7 +31,7 @@ const Horizontal = ({ image, title, body, item }) => {
    <ImageHorizontalCard item={item}/>
         <div className="max-[300px] mr-2 ">
           <div className="flex text-right  lg:min-h-[80px]">
-            <h2 className="tr text-[21px]  tracking-[-0.4px]  font-IRANYekanWeb leading-[145.609%] text-[#101737] font-[700]">
+            <h2 className=" hover:text-main-green duration-300 ease-linear transition-[color] text-[21px]  tracking-[-0.4px]  font-IRANYekanWeb leading-[145.609%] text-[#101737] font-[700]">
               {item.title}
             </h2>
           </div>
