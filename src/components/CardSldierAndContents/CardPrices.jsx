@@ -1,4 +1,5 @@
 import { messageIcon } from "../../assets/svg/svg";
+import { convertToPersianNumber } from "../../lib/helper";
 import style from "../../styles/SliderAndCards.module.css";
 
 const CardPrices = ({item,ownstyle}) => {
@@ -8,11 +9,11 @@ const CardPrices = ({item,ownstyle}) => {
   >
     <div className={`${style.meterPrice} flex  truncate ml-2 `}>
       <span className="ml-1">{messageIcon}</span>{" "}
-      <span className="font-IRANYekanWeb">{item?.price}</span>{" "}
+      <span className="font-IRANYekanWeb ">{convertToPersianNumber(item?.price)}</span>{" "}
       <span className="mr-2 text-[16px] text-gray-600 font-IRANYekanWeb">تومان</span>
     </div>
-    <div className={` whitespace-nowrap ${style.meterPrice2} ${ownstyle ? ownstyle : 'md:flex hidden' } `}>
-      ({item?.priceByEachMeter})
+    <div className={` font-IRANYekanWeb whitespace-nowrap ${style.meterPrice2} ${ownstyle ? ownstyle : 'md:flex hidden' } `}>
+      ({convertToPersianNumber(item?.priceByEachMeter)})
     </div>
   </div>  )
 }

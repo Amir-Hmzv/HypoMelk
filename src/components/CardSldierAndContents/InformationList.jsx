@@ -1,4 +1,5 @@
 import React from 'react'
+import { convertToPersianNumber } from '../../lib/helper';
 
 const InformationList = ({item}) => {
   return (
@@ -7,9 +8,9 @@ const InformationList = ({item}) => {
       return (
         <li key={i}
           className={`relative mx-1 after:mr-2 after:hidden 
-           after:h-1 after:w-1 after:rounded-full after:bg-gray-500  after:content-[''] last:after:hidden after:lg:inline-block`}
+           after:h-1 after:w-1 after:rounded-full font-IRANYekanWe lg:my-2 text-[13px] after:bg-gray-500  after:content-[''] last:after:hidden after:lg:inline-block`}
         >
-          {txt}
+          {convertToPersianNumber(txt)}
         </li>
       );
     })}

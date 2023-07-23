@@ -24,7 +24,7 @@ const ImageCardContent = ({ item, ...rest }) => {
       <div
         className={`absolute bottom-2 left-[10%] rounded-md font-IRANYekanWeb bg-white p-2 sm:left-3 ${style.timeText}`}
       >
-        {item?.time}
+        {convertToPersianNumber(item?.time)}
       </div>
       <div className="absolute right-3 top-3 flex items-center  ">
         <div
@@ -32,7 +32,7 @@ const ImageCardContent = ({ item, ...rest }) => {
             !item?.special && "hidden"
           } `}
         >
-          <span className={`mx-1 ${style.specialText} `}>فروش ویژه</span>
+          <span className={`mx-1 font-IRANYekanWeb ${style.specialText} `}>فروش ویژه</span>
           <span> {specialIcon}</span>
         </div>
         <div
