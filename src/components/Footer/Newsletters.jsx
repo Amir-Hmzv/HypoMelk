@@ -1,7 +1,7 @@
 
 const Newsletters = () => {
   return (
-    <div className="felx flex flex-col space-y-6 px-5 py-5">
+    <div className="felx flex flex-col space-y-6 px-5 py-10  mr-10 lg:mt-10">
     <h1
       className=" tracking-[-0.684px]; whitespace-nowrap text-right font-IRANYekanWeb text-[19px] font-extrabold not-italic leading-[normal] text-white
 "
@@ -14,7 +14,7 @@ const Newsletters = () => {
         placeholder="شماره تماس خود را وارد کنید ..."
         className="placeholder: absolute inset-0 overflow-visible bg-transparent p-3  text-white outline-none placeholder:p-3 placeholder:text-[14px] placeholder:font-[400] placeholder:text-[rgba(255,255,255,0.41)]"
       />
-      <button className="absolute bottom-1 left-1 rounded-[9px] bg-main-green p-1 px-5 py-2 text-white ">
+      <button className="absolute bottom-1 left-1  rounded-[9px] bg-main-green p-1 px-5 py-2 text-white ">
         ثبت
       </button>
     </div>
