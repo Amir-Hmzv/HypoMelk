@@ -28,17 +28,17 @@ const ImageHorizontalCardContent =({ item, ...rest }) => {
           />
       </div>
       <div
-        className={`absolute bottom-2 left-[10%] rounded-md font-IRANYekanWeb bg-white p-2 sm:left-3 ${style.timeText}`}
+        className={`absolute bottom-2 left-[3%] rounded-md font-IRANYekanWeb md:ml-3 lg:ml-0 bg-white p-2 sm:left-3 ${style.timeText}`}
       >
         {item?.time}
       </div>
       <div className="absolute right-3 top-3 flex items-center  ">
         <div
-          className={`flex flex-row-reverse rounded-lg bg-special p-1 lg:p-1 font-IRANYekanWeb ${
+          className={`flex flex-row-reverse rounded-lg bg-special md:mr-3 lg:ml-0 p-1 lg:p-1 font-IRANYekanWeb ${
             !item?.special && "hidden"
           } `}
         >
-          <span className={`mx-1 ${style.specialText} `}>فروش ویژه</span>
+          <span className={`mx-1  ${style.specialText} `}>فروش ویژه</span>
           <span> {specialIcon}</span>
         </div>
         <div
@@ -47,11 +47,11 @@ const ImageHorizontalCardContent =({ item, ...rest }) => {
           پیش فروش
         </div>
       </div>
-      <div className="absolute left-3 top-3 rounded-md bg-white p-2 ">
+      <div className="absolute left-3 top-3  md:ml-3 lg:ml-0 rounded-md bg-white p-2 ">
         {item?.logo}
       </div>
       <div
-        className={` absolute bottom-2   right-[10%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
+        className={` absolute bottom-2 md:mr-3 lg:mr-0   right-[3%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
       >
         <div className={` rounded-md  text-center text-white`}>
           {convertToPersianNumber(item?.media?.length)}
