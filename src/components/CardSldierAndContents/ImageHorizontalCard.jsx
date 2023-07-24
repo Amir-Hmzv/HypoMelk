@@ -74,7 +74,7 @@ const ImageHorizontalCard = ({ item }) => {
         <ChevronRightIcon className="h-4 w-4" />
       </div>
       <div
-        className={`z-10 absolute bottom-2 left-[10%] rounded-md bg-white p-2 sm:left-3 ${style.timeText}`}
+        className={`z-10 absolute bottom-4 lg:bottom-2  left-[3%] rounded-md bg-white p-2 sm:left-3 ${style.timeText}`}
       >
         {convertToPersianNumber(item?.time)}
       </div>
@@ -97,7 +97,7 @@ const ImageHorizontalCard = ({ item }) => {
         {item?.logo}
       </div>
       <div
-        className={` absolute bottom-2  z-10  right-[10%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
+        className={` absolute bottom-4 lg:bottom-2    z-10  right-[3%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
       >
         <div className={` rounded-md  text-center text-white`}>
           {convertToPersianNumber(item?.media?.length)}

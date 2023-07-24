@@ -68,7 +68,7 @@ const ImageCard = ({ item }) => {
           <ChevronRightIcon className="h-4 w-4" />
         </div>
         <div
-          className={`absolute bottom-2 left-[10%] rounded-md bg-white p-2 font-IRANYekanWeb sm:left-3 ${style.timeText}`}
+          className={`absolute bottom-2 left-[5%] rounded-md bg-white p-2 font-IRANYekanWeb sm:left-3 ${style.timeText}`}
         >
           {convertToPersianNumber(item?.time)}
         </div>
@@ -95,7 +95,7 @@ const ImageCard = ({ item }) => {
           {item?.logo}
         </div>
         <div
-          className={` absolute bottom-2    right-[14%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
+          className={` absolute bottom-2    right-[5%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
         >
           <div className={` rounded-md  text-center text-white`}>
             {convertToPersianNumber(item?.media?.length)}

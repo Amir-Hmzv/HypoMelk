@@ -38,7 +38,7 @@ const CenterCardWeblog = ({ item }) => {
 </svg>
 
   return (
-    <div className="bb   flex justify-center flex-col   w-full   px-2" >
+    <div className="bb   flex justify-center flex-col   w-full   " >
       <div className=" max-w-lg m-4 overflow-hidden rounded-[17px]  bg-white p-2   " style={{boxShadow: '0px 0px 34px -9px rgba(12, 46, 96, 0.25)'
     }}>
         <div className=" ">
@@ -48,7 +48,7 @@ const CenterCardWeblog = ({ item }) => {
               className=" h-[200px] w-full rounded-[14px] object-cover"
               alt=""
             />
-            <div className=" absolute flex  bottom-3 left-3 rounded-[9px]  p-1 lg:p-2 ">
+            <div className=" absolute flex  bottom-1 left-3 rounded-[9px]  p-1 lg:p-2 ">
               <div className="flex flex-col mx-2 justify-center space-y-1 bg-[#101737] rounded-[9px] px-2 py-1 ">
                 <span
                   className="  text-center tracking-[-0.385px];  text-[11px] font-extrabold not-italic leading-[165.409%] text-white
