@@ -7,14 +7,9 @@ import {
 } from "../CardSldierAndContents";
 import { useEffect, useRef, useState } from "react";
 import CenterCardWeblog from "./CenterCardWeblog";
-import {
-  A11y,
-  Autoplay,
-  Pagination,
-
-} from "swiper/modules";
+import { A11y, Autoplay, Pagination } from "swiper/modules";
 import service from "../../services/base.service";
-import 'swiper/css';
+import "swiper/css";
 
 const Weblog = () => {
   const [weblogCards, setweblogCards] = useState([]);
@@ -25,7 +20,7 @@ const Weblog = () => {
       const repeatedResults = originalResults.concat(originalResults.slice());
       setweblogCards(repeatedResults);
     });
-  
+
     return () => {};
   }, []);
 
@@ -56,7 +51,6 @@ const Weblog = () => {
     });
   };
 
-
   const { isLast, isFirst } = slideBegOrNot;
   return (
     <div className="mt-64 w-full overflow-visible bg-gray-100 py-14 ">
@@ -74,43 +68,43 @@ const Weblog = () => {
           </div>
         </div>
         <div className=" " data-aos="fade-up">
-        <Swiper
-     ref={SlideRef}
-     onSlideChange={onSlideChange}
-     dir="rtl"
-grabCursor={true}
-     spaceBetween={80}
-     centeredSlides={true}
-     autoplay={{
-       delay: 3500,
-       disableOnInteraction: true,
-       reverseDirection: true
-     }}
-     slidesPerView={3}
-     loop={true}
-     className={`sp  `}
-     modules={[A11y, Autoplay]}
-     breakpoints={{
-      0: {
-        slidesPerView: 1,
-      },
+          <Swiper
+            ref={SlideRef}
+            onSlideChange={onSlideChange}
+            dir="rtl"
+            grabCursor={true}
+            spaceBetween={80}
+            centeredSlides={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: true,
+              reverseDirection: true,
+            }}
+            slidesPerView={3}
+            loop={true}
+            className={`sp  `}
+            modules={[A11y, Autoplay]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
 
-      700: {
-        slidesPerView: 2,
-      },
+              700: {
+                slidesPerView: 2,
+              },
 
-      1024: {
-        slidesPerView: 3,
-      },
-    }}
-  >
-           {weblogCards.length > 0 &&
-            duplicateSlidesForLooping(weblogCards, 2).map((item, i) => (
-              <SwiperSlide key={i} className="w-full h-full   ">
-                <CenterCardWeblog item={item} />
-              </SwiperSlide>
-            ))}
-  </Swiper>
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            {weblogCards.length > 0 &&
+              duplicateSlidesForLooping(weblogCards, 2).map((item, i) => (
+                <SwiperSlide key={i} className="h-full w-full   ">
+                  <CenterCardWeblog item={item} />
+                </SwiperSlide>
+              ))}
+          </Swiper>
           <div className="my-10 space-y-8">
             <div className="flex justify-center sm:hidden">
               <ArrowIconRight isFirst={false} handlePrev={handlePrev} />
