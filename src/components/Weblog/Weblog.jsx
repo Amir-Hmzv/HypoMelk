@@ -29,8 +29,13 @@ const Weblog = () => {
     return () => {};
   }, []);
 
-  console.log(weblogCards.length);
-
+  const duplicateSlidesForLooping = (slides, loopedSlides) => {
+    const additionalSlides = [];
+    for (let i = 0; i < loopedSlides; i++) {
+      additionalSlides.push(slides[i]);
+    }
+    return additionalSlides.concat(slides).concat(additionalSlides);
+  };
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -51,13 +56,7 @@ const Weblog = () => {
     });
   };
 
-  const handleReachEnd = () => {
-    setWeblogCards(weblogCards => {
-      const shiftedCards = [...weblogCards];
-      shiftedCards.push(shiftedCards.shift());
-      return shiftedCards;
-    });
-  }
+
   const { isLast, isFirst } = slideBegOrNot;
   return (
     <div className="mt-64 w-full overflow-visible bg-gray-100 py-14 ">
@@ -105,9 +104,10 @@ grabCursor={true}
       },
     }}
   >
-   {weblogCards && weblogCards.map((item,i) => (
+           {weblogCards.length > 0 &&
+            duplicateSlidesForLooping(weblogCards, 2).map((item, i) => (
               <SwiperSlide key={i} className="w-full h-full   ">
-                <CenterCardWeblog item={item}  />
+                <CenterCardWeblog item={item} />
               </SwiperSlide>
             ))}
   </Swiper>

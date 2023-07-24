@@ -50,6 +50,9 @@ const BitchCards = () => {
             spaceBetween={10}
             modules={[Pagination, Navigation, A11y]}
             className=" mx-10 text-center"
+            noSwiping={false}
+
+            
             breakpoints={{
               0: {
                 slidesPerView: 1,

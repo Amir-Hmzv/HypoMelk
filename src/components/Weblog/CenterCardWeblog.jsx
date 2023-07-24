@@ -1,6 +1,7 @@
 import React from "react";
 import ProflieCard from "../CardSldierAndContents/ProflieCard";
 import WeblogProfileCard from "./WeblogProfileCard";
+import { convertToPersianNumber } from "../../lib/helper";
 
 const CenterCardWeblog = ({ item }) => {
   const { title } = item;
@@ -53,7 +54,7 @@ const CenterCardWeblog = ({ item }) => {
                   className="  text-center tracking-[-0.385px];  text-[11px] font-extrabold not-italic leading-[165.409%] text-white
 "
                 >
-                  {item.view}
+                  {convertToPersianNumber(item.view)}
                 </span>
                 <span>{eyeIcon}</span>
               </div>
@@ -62,7 +63,7 @@ const CenterCardWeblog = ({ item }) => {
                   className="  text-center tracking-[-0.385px];  text-[11px] font-extrabold not-italic leading-[165.409%] text-white
 "
                 >
-                  {item.review_count}
+                  {convertToPersianNumber(item.review_count)}
                 </span>
                 <span>{messageIcon}</span>
               </div>
@@ -70,7 +71,7 @@ const CenterCardWeblog = ({ item }) => {
             <div className="bg-[#6DC175 absolute left-3 top-3 rounded-[9px] bg-white p-1 lg:p-2 ">
               <span className=" text-right font-IRANYekanWeb text-[14px] font-extrabold  leading-[165.409%] tracking-[-0.35px] text-[#535353]">
                 {" "}
-                {item.time} روز پیش{" "}
+                {convertToPersianNumber(item.time)} روز پیش{" "}
               </span>
             </div>
             <div className="absolute right-3  top-3 flex flex-row-reverse rounded-[9px]  bg-[#6DC175] p-1 text-right font-IRANYekanWeb text-sm font-extrabold not-italic leading-[165.409%] tracking-[-0.49px] text-white lg:p-2 ">

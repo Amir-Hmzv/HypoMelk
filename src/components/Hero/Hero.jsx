@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="w-full col-span-2 ">
           
           <img
-            src="/public/cards/news/backGround.png"
+            src="/cards/news/backGround.png"
             className="flex overflow-hidden absolute  h-[500px] w-screen inset-0 lg:inset-auto opacity-50 lg:relative lg:bottom-[17%] lg:right-[27%] lg:min-h-[800px] lg:w-[750px] flex-1 lg:opacity-100 "
             alt=""
           />
