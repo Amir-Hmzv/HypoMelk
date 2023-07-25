@@ -26,7 +26,7 @@ const MetrageOption = () => {
   return (
     <div className="relative  " ref={dropdownRef}>
       <div
-        className={`relative h-[58px] w-[259px]  mx-4   cursor-pointer rounded-[9px] bg-white    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
+        className={`relative mx-4 h-[58px]  w-[259px]   cursor-pointer rounded-[9px] bg-white    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className={`${style.metrageText}`}> متراژ :</div>

@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const MainBackground = () => {
   return (
-    <div className='  lg:block lg:absolute top-0 left-0 max-w-[100%]  opacity-50  lg:opacity-100 lg:w-auto  '>
-      <img src="/public/cards/news/backGround.png" className=' w-[100%]   lg:h-[auto] object-cover' alt="" />
+    <div className="  left-0 top-0 max-w-[100%] opacity-50 lg:absolute  lg:block  lg:w-auto lg:opacity-100  ">
+      <img
+        src="/cards/news/backGround.png"
+        className=" w-[100%]   object-cover lg:h-[auto]"
+        alt=""
+      />
     </div>
-  )
-}
+  );
+};
 
-export default MainBackground
+export default MainBackground;

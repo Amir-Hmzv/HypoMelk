@@ -32,7 +32,7 @@ const PriceRange = () => {
   return (
     <div className="relative z-20" ref={dropdownRef}>
       <div
-        className={` h-[58px] w-[259px]   mx-4  cursor-pointer   rounded-[9px] bg-white xl:w-[343px]    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
+        className={` mx-4 h-[58px]   w-[259px]  cursor-pointer   rounded-[9px] bg-white xl:w-[343px]    ${style.metreagBoxShadow} flex  items-center justify-between px-4  `}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className={`${style.metrageText}`}> بازه قیمتی :</div>
@@ -49,7 +49,7 @@ const PriceRange = () => {
         </div>
       </div>
       <div
-        className={`relative w-full rounded-[10px] p-2  shadow-lg  transition duration-200 lg:absolute bg-white my-2   ${
+        className={`relative my-2 w-full rounded-[10px]  bg-white  p-2 shadow-lg transition duration-200 lg:absolute   ${
           isOpen ? "block" : "hidden"
         }`}
       >

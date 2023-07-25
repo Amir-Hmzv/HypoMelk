@@ -10,7 +10,7 @@ const SearchOption = () => {
       <PriceRange />
       <button
         type="submit"
-        className="rounded-md z-20 bg-main-green  xl:mx-4  px-6 py-4  whitespace-nowrap font-IRANYekanWeb text-white  transition-all  duration-300 ease-linear hover:border-main-green hover:bg-green-500 hover:text-white"
+        className="z-20 whitespace-nowrap rounded-md  bg-main-green  px-6 py-4  font-IRANYekanWeb text-white transition-all  duration-300  ease-linear hover:border-main-green hover:bg-green-500 hover:text-white xl:mx-4"
       >
         جستجوی ملک
       </button>
