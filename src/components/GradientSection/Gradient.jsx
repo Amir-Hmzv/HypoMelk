@@ -18,7 +18,7 @@ const Gradient = ({ title,bg,style }) => {
           </span>
         </div>
         <div className={`relative h-full w-[100%] rounded-r-[17px] ${bg} bg-cover bg-no-repeat px-20`}>
-          <div className="z-5 absolute inset-0 bg-gradient-to-r  from-main-green from-[0%] to-transparent to-[90%]"></div>
+          <div className="z-5 absolute inset-0 bg-gradient-to-r  from-main-green from-[10%]  to-transparent to-[60%]"></div>
         </div>
       </div>
     </div>
