@@ -58,8 +58,8 @@ const Weblog = () => {
         <div className=" flex items-stretch justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
           <ObserveButton style={"hidden sm:flex lg:mx-5"} />
           <HeadTitles
-            title={` از آخرین اخبار اطلاع دارید ؟`}
-            smallTitle={`  وبلاگ اختصاصی ما`}
+            title={`      وبلاگ اختصاصی ما`}
+            smallTitle={`    از آخرین اخبار اطلاع دارید؟؟`}
           />
 
           <div className="hidden  items-center sm:mx-7 sm:flex lg:mx-5">

@@ -29,7 +29,7 @@ const NewsHouses = () => {
 
   return (
     <div className="relative mx-auto mt-[100px] max-w-[1201px] ">
-      <div className=" flex items-stretch justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
+      <div className=" flex items-stretch  justify-center sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
       <ObserveButton style={'hidden sm:flex lg:mx-5'}/>
         <HeadTitles
           title={` خونه جدیدتو پیدا کن !`}
@@ -41,7 +41,7 @@ const NewsHouses = () => {
           <ArrowIconLeft isLast={isLast} handleNext={handleNext} />
         </div>
       </div>
-      <div className="">
+      <div className="mt-14">
         <div data-aos="fade-up" className="">
           <Swiper
             ref={SlideRef}

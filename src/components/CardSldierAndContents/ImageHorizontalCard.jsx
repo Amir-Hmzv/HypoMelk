@@ -106,9 +106,7 @@ const ImageHorizontalCard = ({ item }) => {
       </div>
     </div>
       </Swiper>
-      {/* <div className="absolute inset-0">
-              <div className="bg-yellow-500">sasa</div>
-            </div> */}
+     
     </>
   );
 };
