@@ -51,9 +51,9 @@ const Weblog = () => {
     });
   };
 
-  const { isLast, isFirst } = slideBegOrNot;
+  // const { isLast, isFirst } = slideBegOrNot;
   return (
-    <div className="mt-64 w-full overflow-visible bg-gray-100 py-14 px-8 ">
+    <div className="mt-64 w-full overflow-visible bg-gray-100 px-8 py-14 ">
       <div className="mx-auto max-w-[1201px]">
         <div className=" flex items-stretch justify-center  sm:justify-between  md:px-5 lg:px-8  xl:px-0  ">
           <ObserveButton style={"hidden sm:flex lg:mx-5"} />

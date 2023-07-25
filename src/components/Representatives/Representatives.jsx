@@ -9,9 +9,15 @@ import {
 } from "../CardSldierAndContents";
 import RepresentativeCard from "./RepresentativeCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect } from "react";
+import service from '../../services/base.service'
+const Representatives = () => {
+  const [users, setUsers] = useState([]);
 
-const Representatives = ({ users }) => {
-  console.log(users);
+  useEffect(() => {
+    service.get(`/real/usersinfo/`, (res) => setUsers(res.data));
+  }, []);
+
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -41,11 +47,18 @@ const Representatives = ({ users }) => {
               smallTitle={`نمایندگان با پشتکار ما`}
               title={`با نمایندگان ما آشنا شوید`}
             />
-            <div className="mt-[23px]  flex justify-center  " data-aos='fade-up' >
+            <div
+              className="mt-[23px]  flex justify-center  "
+              data-aos="fade-up"
+            >
               <div className=" flex items-center">
-              <ArrowIconRight isFirst={isFirst} handlePrev={handlePrev} customStyle={'relative md:static '}/>
+                <ArrowIconRight
+                  isFirst={isFirst}
+                  handlePrev={handlePrev}
+                  customStyle={"relative md:static "}
+                />
               </div>
-              
+
               <Swiper
                 ref={SlideRef}
                 dir="rtl"
@@ -73,7 +86,11 @@ const Representatives = ({ users }) => {
                 ))}
               </Swiper>
               <div className="flex items-center">
-              <ArrowIconLeft isLast={isLast} handleNext={handleNext} customStyle={'relative md:static  right-[1px]'} />
+                <ArrowIconLeft
+                  isLast={isLast}
+                  handleNext={handleNext}
+                  customStyle={"relative md:static  right-[1px]"}
+                />
               </div>
               {/* <RepresentativeCard/>
                 <RepresentativeCard/>
