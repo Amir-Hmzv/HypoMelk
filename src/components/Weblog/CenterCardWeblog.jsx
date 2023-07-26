@@ -74,7 +74,7 @@ const CenterCardWeblog = ({ item }) => {
                 {convertToPersianNumber(item.time)} روز پیش{" "}
               </span>
             </div>
-            <div className="absolute right-3  top-3 flex flex-row-reverse rounded-[9px]  bg-[#6DC175] p-1 text-right font-IRANYekanWeb text-sm font-extrabold not-italic leading-[165.409%] tracking-[-0.49px] text-white lg:p-2 ">
+            <div className="absolute right-3  top-3 flex flex-row-reverse rounded-[9px]  bg-[#6DC175] p-1 text-right font-IRANYekanWeb text-sm font-extrabold not-italic leading-[165.409%] tracking-[-0.49px] text-white lg:p-1 ">
               <span className="mx-2">دو دقیقه مطالعه</span>
               <span>
              <svg xmlns="http://www.w3.org/2000/svg" width={23} height={24} viewBox="0 0 23 24" fill="none">

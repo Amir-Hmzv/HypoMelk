@@ -69,16 +69,16 @@ const ImageHorizontalCard = ({ item }) => {
       </div>
       <div
         onClick={handlePrev}
-        className={`next absolute z-10  right-3 top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isFirst && 'opacity-50'}`}
+        className={`next absolute z-10  right-3  top-[50%] rounded-full bg-white p-[3px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] ${isFirst && 'opacity-50'}`}
       >
         <ChevronRightIcon className="h-4 w-4" />
       </div>
       <div
-        className={`z-10 absolute bottom-4 lg:bottom-2  left-[3%] rounded-md bg-white p-2 sm:left-3 ${style.timeText}`}
+        className={`z-10 absolute bottom-4 lg:bottom-2  left-[3%] lg:left-3 md:left-6 rounded-md bg-white p-2 sm:left-3 ${style.timeText}`}
       >
         {convertToPersianNumber(item?.time)}
       </div>
-      <div className="absolute z-10 right-3 top-3 flex items-center  ">
+      <div className="absolute z-10 right-3 md:right-6 lg:right-3 top-3 flex items-center  ">
         <div
           className={`flex flex-row-reverse rounded-lg bg-special py-1 font-IRANYekanWeb ${
             !item?.special && "hidden"
@@ -93,11 +93,11 @@ const ImageHorizontalCard = ({ item }) => {
           پیش فروش
         </div>
       </div>
-      <div className="absolute left-3 top-3 rounded-md bg-white p-2 z-10">
+      <div className="absolute left-3 lg:left-3 md:left-6 top-3 rounded-md bg-white p-2 z-10">
         {item?.logo}
       </div>
       <div
-        className={` absolute bottom-4 lg:bottom-2    z-10  right-[3%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
+        className={` absolute bottom-4 lg:bottom-2    z-10  right-[3%] lg:right-[3%] md:right-[6%] flex-col bg-[#101737] sm:right-3   ${style.cameraText}  `}
       >
         <div className={` rounded-md  text-center text-white`}>
           {convertToPersianNumber(item?.media?.length)}

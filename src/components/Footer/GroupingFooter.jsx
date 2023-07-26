@@ -34,9 +34,9 @@ const GroupingFooter = () => {
         </li>
         <li 
         
-        className="ease group flex cursor-pointer duration-300 hover:text-main-green hover:-translate-x-2 transform ">
+        className="ease group flex cursor-pointer align-baseline duration-300 hover:text-main-green hover:-translate-x-2 transform ">
           
-            <span className=" ml-2  ease opacity-0 transition-all duration-200 group-hover:opacity-100   ">
+            <span className=" ml-2  ease opacity-0 transition-all duration-200  group-hover:opacity-100   ">
            <ChevronLeftIcon className="text-main-green w-4 h-4"/>
           </span>
           <span>لوازم جانبی دوچرخه</span>
