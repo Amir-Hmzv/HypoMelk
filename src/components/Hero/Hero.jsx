@@ -1,4 +1,3 @@
-import MainBackground from "./MainBackground";
 import MainSearchInput from "./MainSearchInput";
 import MainnTitles from "./MainTitles";
 import SearchOption from "./SearchOption";
@@ -6,26 +5,24 @@ import SearchOption from "./SearchOption";
 const Hero = () => {
   return (
     <div className="w-full overflow-x-clip">
-      <div className="mx-auto  max-w-[1201px] flex-row-reverse lg:grid grid-cols-3   ">
-       
-        <div className="flex flex-col col-span-1">
+      <div className="mx-auto  max-w-[1201px] grid-cols-3 flex-row-reverse lg:grid   ">
+        <div className="col-span-1 flex flex-col">
           <MainnTitles />
           <MainSearchInput />
-          <form className={`space-y-9 w-ful relative bottom-8  lg:space-y-0   2xl:mt-[30%] grid grid-cols-1 place-items-center my-5   lg:flex-nowrap   lg:flex  z-[30]  lg:justify-between   px-5 lg:px-8 xl:px-0   `}>
-                <SearchOption />
-              </form>
+          <form
+            className={`relative bottom-8 z-[30]  my-5   grid grid-cols-1 place-items-center space-y-9 px-5   lg:flex   lg:flex-nowrap  lg:justify-between  lg:space-y-0   lg:px-8 xl:px-0 2xl:mt-[30%]   `}
+          >
+            <SearchOption />
+          </form>
         </div>
-        <div className="w-full col-span-2 ">
-          
+        <div className="col-span-2 w-full ">
           <img
             src="/cards/news/backGround.png"
-            className="flex overflow-hidden absolute  h-[500px] w-screen inset-0 lg:inset-auto opacity-50 lg:relative lg:bottom-[17%] lg:right-[27%] lg:min-h-[800px] lg:w-[750px] flex-1 lg:opacity-100 "
+            className="absolute inset-0 flex  h-[500px] w-screen flex-1 overflow-hidden opacity-50 lg:relative lg:inset-auto lg:bottom-[17%] lg:right-[27%] lg:min-h-[800px] lg:w-[750px] lg:opacity-100 "
             alt=""
           />
         </div>
       </div>
-      
-   
     </div>
   );
 };

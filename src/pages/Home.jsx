@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   NewsHouses,
   TrustSection,
@@ -12,7 +12,6 @@ import {
   Weblog,
   WoodSection,
 } from "../components";
-import service from "../services/base.service";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
